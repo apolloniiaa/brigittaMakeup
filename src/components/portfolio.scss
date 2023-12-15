@@ -1,0 +1,96 @@
+$fontSize: 5rem;
+
+.portfolio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  justify-content: center;
+
+  h1 {
+    font-size: $fontSize;
+    font-weight: 600;
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 13rem;
+    white-space: nowrap;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: rgb(180 144 90 / 15%);
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .text {
+      position: absolute;
+      max-width: 45%;
+      bottom: 6%;
+      left: -20%;
+      z-index: 3;
+      text-align: left;
+
+      p {
+        font-size: 1.5rem;
+        font-family: 'Alex Brush', cursive;
+        line-height: 32px;
+      }
+    }
+
+    .images {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      img:last-child {
+        position: absolute;
+        top: 47%;
+        left: 89%;
+        transform: translate(-50%, -50%);
+        width: 51%;
+        height: auto;
+      }
+    }
+  }
+
+  .work-btn {
+    padding: 1rem;
+    border: 1px dotted #e7ba90;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: #e7ba90;
+      color: white;
+
+      transform: scale(1.1); /* Növelés 10%-kal */
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    padding: 6rem 0;
+    height: auto;
+    .slidingTextContainer {
+      font-size: 9rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.blockQuote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .quote-container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .quote {
+    font-size: 5rem;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    font-style: italic;
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .author {
+    font-size: 1.5rem;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    color: #888;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blockQuote {
+    height: auto;
+    padding: 5rem 0;
+  }
+}
