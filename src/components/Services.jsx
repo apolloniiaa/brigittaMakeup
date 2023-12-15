@@ -47,7 +47,7 @@ const Services = () => {
             src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
           />
-          <p>Lorem ipsum dolor </p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing </p>
         </div>
       </motion.div>
     </motion.div>

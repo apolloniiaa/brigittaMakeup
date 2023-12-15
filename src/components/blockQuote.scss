@@ -33,5 +33,23 @@
   .blockQuote {
     height: auto;
     padding: 5rem 0;
+    .quote {
+      font-size: 4rem;
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .blockQuote {
+    margin: 1rem auto;
+    height: auto;
+    padding: 5rem 0;
+    .author {
+      font-size: 0.7rem;
+    }
+    .quote {
+      font-size: 1rem;
+      width: 80%;
+    }
   }
 }

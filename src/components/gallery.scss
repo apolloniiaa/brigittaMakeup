@@ -126,8 +126,39 @@
 @media (min-width: 1440px) {
   .gallery {
     .content {
+      .gallery-link {
+        margin-top: 30rem;
+      }
+      h1 {
+        font-size: 10rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    .content {
       h1 {
         font-size: 6rem;
+      }
+      .gallery-link {
+        margin-top: 20rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .gallery {
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+      .gallery-link {
+        margin-top: 7rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
       }
     }
   }

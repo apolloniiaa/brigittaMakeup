@@ -14,10 +14,10 @@ const About = () => {
             alt='Small Image'
           />
           <p>
-            Szerelem,szenvedély,kitartás,kreativitás,hivatás,remény,húzóerő…ezt
-            jelenti számomra sminkelni. Bátran kijelenthetem,hogy ez az életem.
-            Ezekből következtetésképpen egyértelművé válhat mindenki
-            számára,hogy az én életemben ez nem csak munka. Örömmel
+            Szerelem, szenvedély, kitartás, kreativitás, hivatás,
+            remény,húzóerő. Ez jelenti számomra sminkelni. Bátran kijelenthetem,
+            hogy ez az életem. Ezekből következtetésképpen egyértelművé válhat
+            mindenki számára, hogy az én életemben ez nem csak munka. Örömmel
             mondhatom,hogy megtaláltam azt,ami boldoggá tesz.
           </p>
         </div>
