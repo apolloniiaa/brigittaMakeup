@@ -11,7 +11,7 @@ $breakpoint: 1024px;
     .image-container {
       height: 100%;
       flex: 1;
-      background: url('/assets/photo.jpg');
+      background: url('../assets/intro1.jpeg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -39,7 +39,7 @@ $breakpoint: 1024px;
       flex-direction: column;
 
       .image-container {
-        height: 50vh; // Képernyő magasságának fele
+        height: 50vh;
       }
     }
   }
@@ -51,7 +51,7 @@ $breakpoint: 1024px;
       background-color: aqua;
       height: 100%;
       flex: 1;
-      background: url('/assets/photo.jpg');
+      background: url('../assets/intro2.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; // Helyettesítsd a kép elérési útvonalával
@@ -81,7 +81,7 @@ $breakpoint: 1024px;
     .image-container3 {
       height: 100%;
       flex: 1;
-      background: url('/assets/photo.jpg');
+      background: url('../assets/intro3.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -120,7 +120,7 @@ $breakpoint: 1024px;
         width: 100%;
 
         p {
-          padding: 4rem;
+          padding: 15rem;
         }
       }
     }
@@ -137,7 +137,7 @@ $breakpoint: 1024px;
         flex: 0;
 
         p {
-          padding: 4rem;
+          padding: 15rem;
         }
       }
     }

@@ -1,5 +1,6 @@
 import './hero.scss';
 import { motion } from 'framer-motion';
+import MaingImg from '../assets/homePage.jpg';
 
 const bgVariants = {
   initial: {
@@ -61,7 +62,7 @@ const Hero = () => {
           animate='animate'
           className='imageContainer'
           transition={{ delay: 1 }}
-          src='https://images.pexels.com/photos/3049508/pexels-photo-3049508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+          src={MaingImg}
           alt=''
         />
       </motion.div>
@@ -74,7 +75,8 @@ const Hero = () => {
         className='slidingTextContainer'
         transition={{ delay: 3 }}
       >
-        Németh Brigitta Nóra Makeup Artist
+        Németh Brigitta Nóra <br />
+        Makeup Artist
       </motion.div>
     </motion.div>
   );

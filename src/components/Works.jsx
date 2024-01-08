@@ -10,19 +10,15 @@ const Works = () => {
         <div className='image-container'></div>
         <div className='text-container'>
           <p>
-            Az alkotásaimban igyekszem harmonizálni a formák és színek között,
-            hogy minden részlet tökéletesen illeszkedjen egymáshoz, és
-            létrehozzon egy egyedi, emlékezetes élményt.
+            Az alkotásaimat mindenkinél egyénre szabom, hogy minden illeszkedjen
+            formailag és színvilágilag, hiszen a Te arcodból is csak egy van.
           </p>
         </div>
       </div>
 
       <div className='works-container2'>
         <div className='text-container2'>
-          <p>
-            Minden részletre odafigyelek, hogy egy teljes, összehangolt művet
-            alkothassak.
-          </p>
+          <p>Minden az apró részleteken múlik.</p>
         </div>
         <div className='image-container2'></div>
       </div>
@@ -31,10 +27,9 @@ const Works = () => {
         <div className='image-container3'></div>
         <div className='text-container3'>
           <p>
-            A formák és színek harmóniáját keresem, hogy minden részlet
-            tökéletesen illeszkedjen egymáshoz. Az alkotásaim célja egyedi és
-            emlékezetes élményt nyújtani, ahol a természetes szépség és az
-            esztétikai harmónia dominálnak
+            Bármilyen smink elkészítésére rendelkezésre állok, legyen az
+            kreatív, ahol szárnyalhat a fantáziánk vagy akár csak egy
+            hétköznapi.
           </p>
         </div>
       </div>

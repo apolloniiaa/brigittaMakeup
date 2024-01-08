@@ -33,60 +33,12 @@ const Alkalmi = () => {
           className='small-image'
         />
         <div className='text-container'>
-          <h2>
-            A start makeup here Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Maiores, neque?
-          </h2>
-          <h3>This is where you can tell exactly what you can do for them</h3>
+          <h2>Glamour</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
-            atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Quas iure, natus harum aspernatur nisi ducimus blanditiis voluptas
-            eos assumenda.
+            Itt láthatod a jelenlegi kedvenc munkáimat a Glamour
+            sminkjeimről,amire legtöbb esetben a fényes,vagy erősebb szemsmink
+            jellemző.
           </p>
-        </div>
-      </div>
-
-      <div className='parallax-container'>
-        <section className='text-section'>
-          <h3>Alkalmi smink</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            deserunt quas architecto similique provident expedita voluptatibus
-            cumque dolorum? Quo officia molestias facere enim id, cum eaque
-            minus architecto rerum ex.
-          </p>
-        </section>
-
-        <section className='background-section'>
-          <div className='small-image'>
-            <img
-              src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-              alt=''
-            />
-          </div>
-          <div className='large-image'></div>
-        </section>
-      </div>
-
-      <div className='qa'>
-        <div className='centered-container'>
-          <img
-            src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-            alt='Your Image'
-            className='centered-image'
-          />
-          <div className='text-box'>
-            <p>You're in the QA</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>{' '}
-              <li>Lorem ipsum dolor sit amet.</li>{' '}
-              <li>Lorem ipsum dolor sit amet.</li>{' '}
-              <li>Lorem ipsum dolor sit amet.</li>{' '}
-              <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -99,7 +51,7 @@ const Alkalmi = () => {
           >
             &#10094;
           </a>
-          <div
+          <di
             className='image-container'
             ref={imageContainerRef}
             onScroll={handleScroll}
@@ -112,7 +64,7 @@ const Alkalmi = () => {
                 />
               </div>
             ))}
-          </div>
+          </di>
           <a
             className={`next ${isAtEnd ? 'disabled' : ''}`}
             onClick={() => scroll(1)}

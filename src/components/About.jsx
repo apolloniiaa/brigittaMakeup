@@ -15,10 +15,11 @@ const About = () => {
           />
           <p>
             Szerelem, szenvedély, kitartás, kreativitás, hivatás,
-            remény,húzóerő. Ez jelenti számomra sminkelni. Bátran kijelenthetem,
-            hogy ez az életem. Ezekből következtetésképpen egyértelművé válhat
-            mindenki számára, hogy az én életemben ez nem csak munka. Örömmel
-            mondhatom,hogy megtaláltam azt,ami boldoggá tesz.
+            remény,húzóerő. Ezek jelentik számomra a sminkelést. Bátran
+            kijelenthetem, hogy ez az életem. Ezekből következtetésképpen
+            egyértelművé válhat mindenki számára, hogy az én életemben ez nem
+            csak munka. Örömmel mondhatom,hogy megtaláltam azt, ami boldoggá
+            tesz.
           </p>
         </div>
       </div>
@@ -28,12 +29,12 @@ const About = () => {
           alt='About Me'
         />
         <p>
-          Kislány korom óta rajongom a művészetért,ez kezdetben nemzetközi
-          rajzversenyeken nyilvánult meg,később grafikai tudásomat
-          fejlesztettem,végül a sminkelés vált teljes szenvedélyemmé,mindennek
-          már 7éve. Izgalmas hivatás ez,hiszen úgymond 3D vásznakon alkothatok
-          és mint tudjuk,minden arc más és más,így sosem születik két ugyan
-          olyan..
+          Kislány korom óta rajongom a művészetért, ez kezdetben nemzetközi
+          rajzversenyeken nyilvánult meg, később grafikai tudásomat
+          fejlesztettem, végül a sminkelés vált teljes szenvedélyemmé, mindennek
+          már 7éve. Izgalmas hivatás ez, hiszen úgymond 3D vásznakon alkothatok
+          és mint tudjuk,minden arc más és más, így sosem születik két ugyan
+          olyan...
         </p>
       </div>
     </div>

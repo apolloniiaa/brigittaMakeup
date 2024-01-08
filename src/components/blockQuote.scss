@@ -1,8 +1,19 @@
+@import '../app.scss';
+
 .blockQuote {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @include tablet {
+    height: 80vh;
+    padding: 5rem 0;
+  }
+  @include mobile {
+    padding: 0;
+    margin: 1rem auto;
+  }
 
   .quote-container {
     text-align: center;
@@ -19,37 +30,25 @@
     font-style: italic;
     width: 80%;
     margin: 3rem auto;
+    font-family: 'Alex Brush', cursive;
+    letter-spacing: 5px;
+
+    @include mobile {
+      font-size: 2rem;
+      width: 90%;
+      letter-spacing: 3px;
+    }
   }
 
   .author {
     font-size: 1.5rem;
-    margin-top: 0;
     position: relative;
     z-index: 1;
     color: #888;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .blockQuote {
-    height: auto;
-    padding: 5rem 0;
-    .quote {
-      font-size: 4rem;
-      width: 90%;
-    }
-  }
-}
-@media screen and (max-width: 780px) {
-  .blockQuote {
-    margin: 1rem auto;
-    height: auto;
-    padding: 5rem 0;
-    .author {
-      font-size: 0.7rem;
-    }
-    .quote {
+
+    @include mobile {
       font-size: 1rem;
-      width: 80%;
+      margin-bottom: 2rem;
     }
   }
 }

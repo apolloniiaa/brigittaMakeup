@@ -25,9 +25,8 @@ const Portfolio = () => {
       <div className='content'>
         <div className='text'>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac
-            justo nec urna ultricies sollicitudin. Quisque fermentum, odio at
-            sagittis volutpat, turpis.
+            ' Do it with passion or not at all. ' Ez az idézet abszolút rólam
+            szól, ami annyit tesz, hogy ' Csináld szenvedéllyel, vagy sehogy.'
           </p>
         </div>
         <div className='images'>
@@ -43,7 +42,7 @@ const Portfolio = () => {
       </div>
       <Link to='/works'>
         <p className='work-btn'>
-          View My Portfolio <Link to='/works'></Link>
+          Portfolió <Link to='/works'></Link>
         </p>
       </Link>
     </div>
