@@ -1,5 +1,15 @@
 import './makeup.scss';
 import React, { useState, useRef } from 'react';
+import BeautyCoverImg from '../assets/beautyfirstbalfent.jpg';
+import BeautyCarousel1 from '../assets/bjtcarousel1.jpeg';
+import BeautyCarousel2 from '../assets/bjticarousel2.jpeg';
+import BeautyCarousel4 from '../assets/bjticarousel4.jpeg';
+import BeautyCarousel5 from '../assets/bjticarousel5.jpg';
+import BeautyCarousel6 from '../assets/bjticarousel6.jpeg';
+import BeautyCarousel7 from '../assets/bjticarousel7.jpeg';
+import BeautyCarousel8 from '../assets/bjticarousel8.jpeg';
+import BeautyCarousel9 from '../assets/bjticarousel9.jpeg';
+import BeautyCarousel10 from '../assets/bjticarousel10.jpeg';
 
 const Alkalmi = () => {
   const imageContainerRef = useRef(null);
@@ -27,11 +37,7 @@ const Alkalmi = () => {
   return (
     <>
       <div className='parallax'>
-        <img
-          src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-          alt='Small Image'
-          className='small-image'
-        />
+        <img src={BeautyCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Beauty</h2>
           <p>
@@ -57,15 +63,32 @@ const Alkalmi = () => {
             ref={imageContainerRef}
             onScroll={handleScroll}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-              <div className='image' key={number}>
+            {[
+              BeautyCarousel9,
+              BeautyCarousel1,
+              BeautyCarousel2,
+              BeautyCarousel4,
+              BeautyCarousel5,
+              BeautyCarousel6,
+              BeautyCarousel7,
+              BeautyCarousel8,
+
+              BeautyCarousel10,
+            ].map((image, index) => (
+              <div className='image' key={index}>
                 <img
-                  src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-                  alt={`Image ${number}`}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: '400px',
+                    height: '500px',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             ))}
           </div>
+
           <a
             className={`next ${isAtEnd ? 'disabled' : ''}`}
             onClick={() => scroll(1)}

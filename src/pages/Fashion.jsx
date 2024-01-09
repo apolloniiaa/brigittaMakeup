@@ -1,5 +1,12 @@
 import './makeup.scss';
 import React, { useState, useRef } from 'react';
+import FashionCoverImg from '../assets/fashionCover.jpg';
+import FashionCarousel1 from '../assets/fashioncarousel1.jpg';
+import FashionCarousel4 from '../assets/fashioncarousel5.jpg';
+import FashionCarousel5 from '../assets/fashioncarousel6.jpg';
+import FashionCarousel6 from '../assets/fashioncarousel8.jpg';
+import FashionCarousel7 from '../assets/fashioncarousel9.jpeg';
+import FashionCarousel9 from '../assets/fashioncarousel9.jpg';
 
 const Alkalmi = () => {
   const imageContainerRef = useRef(null);
@@ -27,11 +34,7 @@ const Alkalmi = () => {
   return (
     <>
       <div className='parallax'>
-        <img
-          src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-          alt='Small Image'
-          className='small-image'
-        />
+        <img src={FashionCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Fashion</h2>
           <p>
@@ -56,11 +59,23 @@ const Alkalmi = () => {
             ref={imageContainerRef}
             onScroll={handleScroll}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-              <div className='image' key={number}>
+            {[
+              FashionCarousel1,
+              FashionCarousel4,
+              FashionCarousel5,
+              FashionCarousel9,
+              FashionCarousel6,
+              FashionCarousel7,
+            ].map((image, index) => (
+              <div className='image' key={index}>
                 <img
-                  src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-                  alt={`Image ${number}`}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: '400px',
+                    height: '500px',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             ))}

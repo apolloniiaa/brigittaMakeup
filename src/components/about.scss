@@ -1,4 +1,4 @@
-// about.scss
+@import '../app.scss';
 
 .about {
   display: flex;
@@ -14,7 +14,7 @@
     position: relative;
 
     .title {
-      font-size: 50rem;
+      font-size: 12rem;
       margin-bottom: 20px;
       position: absolute;
       position: absolute;
@@ -22,9 +22,13 @@
       color: #e7ba90;
       text-align: center;
       z-index: 2;
-      top: 23%;
-      left: 53%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
+
+      @include laptop {
+        top: 40%;
+      }
     }
 
     .small-image-container {
@@ -36,6 +40,11 @@
         width: 300px;
         height: auto;
         margin-bottom: 70px;
+        filter: brightness(0.9);
+
+        @include laptop {
+          width: 260px;
+        }
       }
 
       p {
@@ -86,27 +95,23 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .about {
-    height: auto;
-    .content-container {
-      .title {
-        font-size: 7rem;
-        top: 20%;
-        left: 50%;
-      }
-    }
-  }
-}
+// @media (max-width: 1440px) {
+//   .about {
+//     height: auto;
+//     .content-container {
+//       .title {
+//         font-size: 7rem;
+//       }
+//     }
+//   }
+// }
 @media screen and (max-width: 1024px) {
   .about {
     flex-direction: column;
     .content-container {
       .small-image-container {
         padding: 10rem 0;
-        img {
-          width: 100%;
-        }
+
         p {
           padding: 0;
           width: 70%;
@@ -125,9 +130,7 @@
       }
       .small-image-container {
         padding: 10rem 0;
-        img {
-          width: 100%;
-        }
+
         p {
           padding: 0;
           width: 80%;

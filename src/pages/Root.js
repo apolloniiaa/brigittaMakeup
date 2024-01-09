@@ -19,13 +19,13 @@ function RootLayout() {
       <Hero />
       <BlockQuote />
       <Works />
-      {/* 
       <Portfolio />
       <About />
+
       <Services />
-      <Outlet />
       <Gallery />
-      <Links /> */}
+      <Links />
+      <Outlet />
     </>
   );
 }

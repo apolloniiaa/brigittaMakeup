@@ -1,35 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './works.scss';
-import intro1 from '../assets/intro1.jpeg';
-// import intro2 from '../assets/intro2.jpeg';
-// import intro3 from '../assets/intro3.jpeg';
+import BeautyCoverImg from '../assets/beautyCover.jpg';
+import GlamourCoverImg from '../assets/glamourCover.jpeg';
+import WeddingCoverImg from '../assets/weddingfomain.jpg';
+import FashionCoverImg from '../assets/fashionCover.jpg';
+import ArtCoverImg from '../assets/artcarousel3.jpeg';
 
 const Works = () => {
   return (
     <div className='workee'>
       <div className='works'>
-        <Card to='/beauty' title='Beauty' src={intro1} />
-        <Card
-          to='/glamour'
-          title='Glamour'
-          imageUrl='https://images.pexels.com/photos/1264442/pexels-photo-1264442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        />
-        <Card
-          to='/wedding'
-          title='Esküvői'
-          imageUrl='https://images.pexels.com/photos/1264442/pexels-photo-1264442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        />
-        <Card
-          to='/fashion'
-          title='Divat'
-          imageUrl='https://images.pexels.com/photos/1264442/pexels-photo-1264442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        />
-        <Card
-          to='/art'
-          title='Art'
-          imageUrl='https://images.pexels.com/photos/1264442/pexels-photo-1264442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-        />
+        <Card to='/beauty' title='Beauty' imageUrl={BeautyCoverImg} />
+        <Card to='/glamour' title='Glamour' imageUrl={GlamourCoverImg} />
+        <Card to='/wedding' title='Esküvői' imageUrl={WeddingCoverImg} />
+        <Card to='/fashion' title='Divat' imageUrl={FashionCoverImg} />
+        <Card to='/art' title='Art' imageUrl={ArtCoverImg} />
       </div>
     </div>
   );

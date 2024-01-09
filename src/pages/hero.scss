@@ -37,6 +37,10 @@
       width: 600px;
       height: 700px;
       object-fit: cover;
+
+      @include tablet {
+        height: 400px;
+      }
       @include mobile {
         width: 220px;
         height: 275px;
@@ -46,17 +50,17 @@
 
   .slidingTextContainer {
     position: absolute;
-    font-size: 7rem;
+    font-size: 6rem;
     white-space: nowrap;
     top: 70%;
     width: 50%;
     z-index: 1;
     color: #e7ba90;
     text-align: center;
-
+    line-height: 90px;
     @include tablet {
       top: 75%;
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     @include mobile {
@@ -76,12 +80,6 @@
       .contentContainer {
         width: auto;
         padding: 3rem;
-      }
-      .imageContainer {
-        img {
-          height: 400px;
-          width: 100%;
-        }
       }
     }
     // .slidingTextContainer {

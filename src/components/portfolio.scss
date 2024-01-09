@@ -1,3 +1,5 @@
+@import '../app.scss';
+
 $fontSize: 5rem;
 
 .portfolio {
@@ -23,7 +25,7 @@ $fontSize: 5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    color: rgb(180 144 90 / 15%);
+    color: rgb(231 186 144 / 20%);
   }
 
   .content {
@@ -35,16 +37,17 @@ $fontSize: 5rem;
 
     .text {
       position: absolute;
-      max-width: 45%;
-      bottom: 6%;
+      max-width: 75%;
+      bottom: 4%;
       left: -20%;
       z-index: 3;
       text-align: left;
-
+      letter-spacing: 2px;
+      text-align: center;
       p {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-family: 'Alex Brush', cursive;
-        line-height: 32px;
+        line-height: 42px;
       }
     }
 
@@ -52,17 +55,19 @@ $fontSize: 5rem;
       position: relative;
 
       img {
-        width: 100%;
-        height: auto;
+        filter: brightness(0.5);
+        width: 730px;
+        height: 680px;
         display: block;
+        object-fit: contain;
       }
 
       img:last-child {
         position: absolute;
-        top: 47%;
-        left: 89%;
+        top: 50%;
+        left: 84%;
         transform: translate(-50%, -50%);
-        width: 51%;
+        width: 250px;
         height: auto;
       }
     }
@@ -71,7 +76,7 @@ $fontSize: 5rem;
   .work-btn {
     padding: 1rem;
     border: 1px dotted #e7ba90;
-    margin-top: 3rem;
+    margin: 3rem;
     cursor: pointer;
     font-size: 1.3rem;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -88,31 +93,40 @@ $fontSize: 5rem;
 @media screen and (max-width: 1024px) {
   .portfolio {
     padding: 6rem 0;
-    height: auto;
     .slidingTextContainer {
       font-size: 7rem;
+    }
+    .content {
+      .text {
+        left: 0%;
+      }
     }
   }
 }
 @media screen and (max-width: 780px) {
   .portfolio {
+    padding: 0;
     height: auto;
 
     .content {
+      margin-top: 0;
       .images {
-        img:last-child {
-          top: 47%;
-          left: 47%;
-          transform: translate(-50%, -50%);
-          width: 51%;
+        img {
+          width: 100%;
           height: auto;
+        }
+        img:last-child {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 316px;
         }
       }
       .text {
-        width: 70%;
-        bottom: 15%;
-        left: 13%;
-        max-width: 80%;
+        width: 64%;
+        bottom: 20%;
+        left: 17%;
 
         p {
           font-size: 1rem;
@@ -123,7 +137,7 @@ $fontSize: 5rem;
     .slidingTextContainer {
       font-size: 3rem;
       left: 50%;
-      bottom: 65%;
+      bottom: 80%;
     }
     .work-btn {
       font-size: 1rem;

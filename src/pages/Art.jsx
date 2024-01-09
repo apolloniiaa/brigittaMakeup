@@ -1,5 +1,14 @@
 import './makeup.scss';
 import React, { useState, useRef } from 'react';
+import ArtCoverImg from '../assets/artcarousel1.jpg';
+
+import ArtCarousel2 from '../assets/artcarousel2.jpg';
+import ArtCarousel3 from '../assets/artcarousel3.jpeg';
+import ArtCarousel4 from '../assets/artcarousel4.jpeg';
+import ArtCarousel5 from '../assets/artcarousel5.jpeg';
+import ArtCarousel6 from '../assets/artcarousel6.jpeg';
+import ArtCarousel7 from '../assets/artcarousel7.jpeg';
+import ArtCarousel8 from '../assets/artcarousel8.jpeg';
 
 const Alkalmi = () => {
   const imageContainerRef = useRef(null);
@@ -27,11 +36,7 @@ const Alkalmi = () => {
   return (
     <>
       <div className='parallax'>
-        <img
-          src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-          alt='Small Image'
-          className='small-image'
-        />
+        <img src={ArtCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Art</h2>
           <p>
@@ -55,11 +60,24 @@ const Alkalmi = () => {
             ref={imageContainerRef}
             onScroll={handleScroll}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-              <div className='image' key={number}>
+            {[
+              ArtCarousel2,
+              ArtCarousel3,
+              ArtCarousel4,
+              ArtCarousel5,
+              ArtCarousel6,
+              ArtCarousel7,
+              ArtCarousel8,
+            ].map((image, index) => (
+              <div className='image' key={index}>
                 <img
-                  src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-                  alt={`Image ${number}`}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: '400px',
+                    height: '500px',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             ))}

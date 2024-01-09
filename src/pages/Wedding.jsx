@@ -1,6 +1,18 @@
 import './makeup.scss';
 import React, { useState, useRef } from 'react';
-
+import WeddingCoverImg from '../assets/weddingfomain.jpg';
+import WeddingCarousel1 from '../assets/weddingcarousel1.jpeg';
+import WeddingCarousel2 from '../assets/weddingcarousel2.jpeg';
+import WeddingCarousel3 from '../assets/weddingcarousel3.jpeg';
+import WeddingCarousel4 from '../assets/weddingcarousel4.jpeg';
+import WeddingCarousel5 from '../assets/weddingcarousel5.jpeg';
+import WeddingCarousel6 from '../assets/weddingcarousel6.jpg';
+import WeddingCarousel7 from '../assets/weddingcarousel7.jpeg';
+import WeddingCarousel8 from '../assets/weddingcarousel8.jpeg';
+import WeddingCarousel9 from '../assets/weddingcarousel9.jpeg';
+import WeddingCarousel10 from '../assets/weddingcarousel10.jpeg';
+import WeddingCarousel11 from '../assets/weddingcarousel11.jpeg';
+import WeddingCarousel12 from '../assets/weddingcarousel12.jpeg';
 const Alkalmi = () => {
   const imageContainerRef = useRef(null);
   const [isAtStart, setIsAtStart] = useState(true);
@@ -27,11 +39,7 @@ const Alkalmi = () => {
   return (
     <>
       <div className='parallax'>
-        <img
-          src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-          alt='Small Image'
-          className='small-image'
-        />
+        <img src={WeddingCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Mennyaszonyi Smink</h2>
           <p>
@@ -57,11 +65,29 @@ const Alkalmi = () => {
             ref={imageContainerRef}
             onScroll={handleScroll}
           >
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-              <div className='image' key={number}>
+            {[
+              WeddingCarousel1,
+              WeddingCarousel2,
+              WeddingCarousel3,
+              WeddingCarousel4,
+              WeddingCarousel5,
+              WeddingCarousel6,
+              WeddingCarousel7,
+              WeddingCarousel8,
+              WeddingCarousel9,
+              WeddingCarousel10,
+              WeddingCarousel11,
+              WeddingCarousel12,
+            ].map((image, index) => (
+              <div className='image' key={index}>
                 <img
-                  src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-                  alt={`Image ${number}`}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                  style={{
+                    width: '400px',
+                    height: '500px',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             ))}
