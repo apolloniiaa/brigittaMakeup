@@ -7,6 +7,11 @@ import Fashion from './pages/Fashion';
 import Art from './pages/Art';
 import Wedding from './pages/Wedding';
 
+import Alkalmi from './pages/Alkalmi';
+import Mennyasszonyi from './pages/Mennyasszonyi';
+import Fotozas from './pages/Fotozas';
+import Onsminkelo from './pages/Onsminkelo';
+
 import Works from './pages/Works';
 
 import RootLayout from './pages/Root';
@@ -24,6 +29,10 @@ const router = createBrowserRouter([
   { path: '/fashion', element: <Fashion /> },
   { path: '/art', element: <Art /> },
   { path: '/wedding', element: <Wedding /> },
+  { path: '/mennyasszonyi', element: <Mennyasszonyi /> },
+  { path: '/fotozas', element: <Fotozas /> },
+  { path: '/onsminkelo', element: <Onsminkelo /> },
+  { path: '/alkalmi', element: <Alkalmi /> },
 ]);
 
 const App = () => {

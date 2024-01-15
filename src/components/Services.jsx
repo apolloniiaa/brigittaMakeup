@@ -1,54 +1,52 @@
 import './services.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
     <motion.div className='services' id='services'>
-      <motion.div className='textContainer'>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur
-          <br />
-          adipisicing elit.
-        </p>
-        <hr />
-      </motion.div>
       <motion.div className='titleContainer'>Szolgáltatások</motion.div>
       <motion.div className='listContainer'>
-        <div className='box'>
+        <Link to='/alkalmi' className='box'>
           <img
             src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
           />
-          <p>Alkalmi Smink</p>
-        </div>
-        <div className='box'>
+
+          <p className='work-btn'>
+            Alkalmi Smink <Link to='/alkalmi'></Link>
+          </p>
+        </Link>
+
+        <Link to='/mennyasszonyi' className='box'>
           <img
             src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
           />
-          <p>Mennyasszonyi Smink </p>
-        </div>
-        <div className='box'>
+
+          <p className='work-btn'>
+            Mennyasszonyi Smink <Link to='/alkalmi'></Link>
+          </p>
+        </Link>
+
+        <Link to='/fotozas' className='box'>
           <img
             src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
           />
-          <p>Fotózás/ Forgatás</p>
-        </div>
-        <div className='box'>
+
+          <p className='work-btn'>
+            Fotózás/Forgatás <Link to='/fotozas'></Link>
+          </p>
+        </Link>
+
+        <Link to='/onsminkelo' className='box'>
           <img
             src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             alt=''
           />
-          <p>Önsminkelő oktatás</p>
-        </div>
-        <div className='box'>
-          <img
-            src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-          />
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing </p>
-        </div>
+          <p className='work-btn'>Önsminkelő oktatás</p>
+        </Link>
       </motion.div>
     </motion.div>
   );

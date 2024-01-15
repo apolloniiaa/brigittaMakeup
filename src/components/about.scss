@@ -3,6 +3,9 @@
 .about {
   display: flex;
   height: 100vh;
+  @include tablet {
+    height: auto;
+  }
 
   .content-container {
     flex: 1;
@@ -95,16 +98,6 @@
   }
 }
 
-// @media (max-width: 1440px) {
-//   .about {
-//     height: auto;
-//     .content-container {
-//       .title {
-//         font-size: 7rem;
-//       }
-//     }
-//   }
-// }
 @media screen and (max-width: 1024px) {
   .about {
     flex-direction: column;
