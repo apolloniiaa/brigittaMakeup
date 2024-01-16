@@ -43,15 +43,7 @@ const Alkalmi = () => {
           </p>
         </section>
 
-        <section className='background-section'>
-          <div className='small-image'>
-            <img
-              src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-              alt=''
-            />
-          </div>
-          <div className='large-image'></div>
-        </section>
+        <section className='background-section'></section>
       </div>
 
       <div className='qa'>

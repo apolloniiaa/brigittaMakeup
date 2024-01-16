@@ -18,6 +18,10 @@
     .social {
       display: flex;
       gap: 20px;
+      .icon {
+        font-size: 2rem;
+        color: #e7ba90;
+      }
       @include tablet {
         gap: 10px;
       }

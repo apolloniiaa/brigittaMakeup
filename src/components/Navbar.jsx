@@ -1,11 +1,13 @@
+import {
+  FaInstagram,
+  FaFacebook,
+  FaEnvelope,
+  FaLinkedin,
+} from 'react-icons/fa';
+
 import './navbar.scss';
 import { motion } from 'framer-motion';
 import SideBar from './sidebar/SideBar';
-import LinkedinIcon from '../assets/linkedin.svg';
-import FbIcon from '../assets/fb.svg';
-import TikTokIcon from '../assets/tiktok.svg';
-import EmailIcon from '../assets/email.svg';
-import InstagramIcon from '../assets/instagram.svg';
 
 const Navbar = () => {
   return (
@@ -18,20 +20,33 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         ></motion.span>
         <div className='social'>
-          <a href=''>
-            <img src={LinkedinIcon} alt='' />
+          <a
+            href='https://www.instagram.com/nbn_mua?fbclid=IwAR0ryDSd02aqJn6F0kd1EV6vivnSskMH2KR7HcHQjbhNFcr4vs3YzE4I7r8 '
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram className='icon' />
           </a>
-          <a href=''>
-            <img src={FbIcon} alt='' />
+          <a
+            href='https://www.facebook.com/brigitta.n.nemeth'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook className='icon' />
           </a>
-          <a href=''>
-            <img src={EmailIcon} alt='' />
+          <a
+            href='https://www.linkedin.com/in/janos-balogh-83a21521b/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaLinkedin className='icon' />
           </a>
-          <a href=''>
-            <img src={TikTokIcon} alt='' />
-          </a>
-          <a href=''>
-            <img src={InstagramIcon} alt='' />
+          <a
+            href='mailto:nemeth.brigittanora@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaEnvelope className='icon' />
           </a>
         </div>
       </div>

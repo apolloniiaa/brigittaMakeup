@@ -11,6 +11,7 @@ import Services from '../components/Services';
 import Works from '../components/Works';
 import BlockQuote from '../components/BlockQuote';
 import Gallery from '../components/Gallery';
+import Footer from '../components/Footer';
 
 function RootLayout() {
   return (
@@ -18,13 +19,14 @@ function RootLayout() {
       <Navbar />
       <Hero />
       <BlockQuote />
+      <About />
+      <Services />
       <Works />
       <Portfolio />
-      <About />
 
-      <Services />
       <Gallery />
       <Links />
+      <Footer />
       <Outlet />
     </>
   );

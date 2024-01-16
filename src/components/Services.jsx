@@ -1,54 +1,68 @@
 import './services.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import WeddingCarousel1 from '../assets/fashioncarousel6.jpg';
 
 const Services = () => {
   return (
-    <motion.div className='services' id='services'>
-      <motion.div className='titleContainer'>Szolgáltatások</motion.div>
-      <motion.div className='listContainer'>
-        <Link to='/alkalmi' className='box'>
-          <img
-            src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-          />
+    <section className='container'>
+      <h1>Szolgáltatások</h1>
 
-          <p className='work-btn'>
-            Alkalmi Smink <Link to='/alkalmi'></Link>
-          </p>
-        </Link>
-
-        <Link to='/mennyasszonyi' className='box'>
-          <img
-            src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-          />
-
-          <p className='work-btn'>
-            Mennyasszonyi Smink <Link to='/alkalmi'></Link>
-          </p>
-        </Link>
-
-        <Link to='/fotozas' className='box'>
-          <img
-            src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-          />
-
-          <p className='work-btn'>
-            Fotózás/Forgatás <Link to='/fotozas'></Link>
-          </p>
-        </Link>
-
-        <Link to='/onsminkelo' className='box'>
-          <img
-            src='https://images.pexels.com/photos/7121392/pexels-photo-7121392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-            alt=''
-          />
-          <p className='work-btn'>Önsminkelő oktatás</p>
-        </Link>
-      </motion.div>
-    </motion.div>
+      <section className='card__container'>
+        <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
+          <div className='card__data'>
+            <div className='card__icon'>
+              <img
+                src={WeddingCarousel1}
+                style={{ width: '200px', height: '90px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className='card__content'>
+              <Link to='/alkalmi'>Alkalmi Smink</Link>
+            </div>
+          </div>
+        </div>
+        <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
+          <div className='card__data'>
+            <div className='card__icon'>
+              <img
+                src={WeddingCarousel1}
+                style={{ width: '200px', height: '90px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className='card__content'>
+              <Link to='/fotozas'>Fotózás/Forgatás</Link>
+            </div>
+          </div>
+        </div>
+        <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
+          <div className='card__data'>
+            <div className='card__icon'>
+              <img
+                src={WeddingCarousel1}
+                style={{ width: '200px', height: '90px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className='card__content'>
+              <Link to='/mennyasszonyi'>Mennyasszonyi Smink</Link>
+            </div>
+          </div>
+        </div>
+        <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
+          <div className='card__data'>
+            <div className='card__icon'>
+              <img
+                src={WeddingCarousel1}
+                style={{ width: '200px', height: '90px', objectFit: 'cover' }}
+              />
+            </div>
+            <div className='card__content'>
+              <Link to='/onsminkelo'>Önsminkelő Oktatás</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   );
 };
 
