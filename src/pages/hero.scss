@@ -34,12 +34,12 @@
     z-index: 1;
 
     img {
-      width: 600px;
-      height: 700px;
+      width: 530px;
+      height: 500px;
       object-fit: cover;
 
       @include tablet {
-        height: 400px;
+        width: 530px;
       }
       @include mobile {
         width: 220px;

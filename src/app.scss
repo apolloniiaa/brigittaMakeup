@@ -31,7 +31,7 @@ div.links {
 }
 
 @mixin mobile {
-  @media (max-width: 738px) {
+  @media (max-width: 820px) {
     @content;
   }
 }
