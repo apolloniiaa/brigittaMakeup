@@ -15,7 +15,7 @@ import Onsminkelo from './pages/Onsminkelo';
 import Works from './pages/Works';
 
 import RootLayout from './pages/Root';
-// import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +33,7 @@ const router = createBrowserRouter([
   { path: '/fotozas', element: <Fotozas /> },
   { path: '/onsminkelo', element: <Onsminkelo /> },
   { path: '/alkalmi', element: <Alkalmi /> },
+  { path: '/contact', element: <Contact /> },
 ]);
 
 const App = () => {

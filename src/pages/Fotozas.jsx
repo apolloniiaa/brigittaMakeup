@@ -2,28 +2,6 @@ import './makeup.scss';
 import React, { useState, useRef } from 'react';
 
 const Fotozas = () => {
-  const imageContainerRef = useRef(null);
-  const [isAtStart, setIsAtStart] = useState(true);
-  const [isAtEnd, setIsAtEnd] = useState(false);
-
-  const handleScroll = () => {
-    const container = imageContainerRef.current;
-    const isAtStart = container.scrollLeft === 0;
-    const isAtEnd =
-      container.scrollLeft + container.clientWidth >= container.scrollWidth;
-
-    setIsAtStart(isAtStart);
-    setIsAtEnd(isAtEnd);
-  };
-
-  const scroll = (direction) => {
-    const container = imageContainerRef.current;
-    const far = (container.clientWidth / 2) * direction;
-    const pos = container.scrollLeft + far;
-
-    container.scrollTo({ left: pos, behavior: 'smooth' });
-  };
-
   return (
     <>
       <div className='parallax-container'>

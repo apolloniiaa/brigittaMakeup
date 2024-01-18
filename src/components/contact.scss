@@ -1,0 +1,103 @@
+@import '../app.scss';
+.contact-wrapper {
+  background-image: url('../assets/fashioncarousel9.jpeg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact {
+  margin: auto;
+  height: 100vh;
+  max-width: 1366px;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    height: auto;
+    gap: 4px;
+  }
+
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include tablet {
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 7rem;
+    }
+    @include tablet {
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      width: 80px;
+      line-height: 70px;
+      @include tablet {
+        width: 100%;
+      }
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    span {
+      font-weight: 600;
+      @include mobile {
+        padding: 8px;
+      }
+    }
+  }
+  .formContainer {
+    flex: 1;
+    height: 40vh;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1.5rem;
+        @include mobile {
+          padding: 7px;
+          font-size: 1.3rem;
+        }
+      }
+      button {
+        padding: 20px;
+        border: none;
+        background-color: #e7ba90;
+        cursor: pointer;
+        font-weight: 500;
+        @include mobile {
+          padding: 8px;
+        }
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+      padding: 4rem;
+    }
+    @include mobile {
+      width: auto;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,12 +1,10 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './gallery.scss';
-import WorkImg from '../assets/fashioncarousel1.jpg';
 
 const Gallery = () => {
   return (
     <div className='gallery' id='contact'>
       <div className='background-img'>
-        {/* <img src={WorkImg} alt='Background Image' /> */}
         <div className='overlay'></div>
       </div>
 
@@ -14,7 +12,11 @@ const Gallery = () => {
         <h1>DOLGOZZUNK EGYÜTT!</h1>
         <h1>DOLGOZZUNK EGYÜTT!</h1>
         <div className='gallery-link'>
-          <a href='#'>Elérhetőség</a>
+          <Link to='/contact'>
+            <p className='work-btn'>
+              Kapcsolat <Link to='/contact'></Link>
+            </p>
+          </Link>
         </div>
       </div>
     </div>

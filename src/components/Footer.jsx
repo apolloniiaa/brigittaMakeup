@@ -1,4 +1,5 @@
 import './footer.scss';
+
 import {
   FaInstagram,
   FaFacebook,
