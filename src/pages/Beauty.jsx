@@ -11,7 +11,7 @@ import BeautyCarousel8 from '../assets/bjticarousel8.jpeg';
 import BeautyCarousel9 from '../assets/bjticarousel9.jpeg';
 import BeautyCarousel10 from '../assets/bjticarousel10.jpeg';
 
-const Alkalmi = () => {
+const Beauty = () => {
   const imageContainerRef = useRef(null);
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
@@ -36,8 +36,8 @@ const Alkalmi = () => {
 
   return (
     <>
+      {' '}
       <div className='parallax'>
-        <img src={BeautyCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Beauty</h2>
           <p>
@@ -48,57 +48,106 @@ const Alkalmi = () => {
           </p>
         </div>
       </div>
+      <div className='wrapper'>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={BeautyCarousel1} alt='' wide />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={BeautyCarousel4} alt='' big />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={BeautyCarousel10} alt='' big />
+        </div>
 
-      <div className='carousel'>
-        <div className='wrapper'>
-          <a
-            className={`prev ${isAtStart ? 'disabled' : ''}`}
-            onClick={() => scroll(-1)}
-            style={{ visibility: isAtStart ? 'hidden' : 'visible' }}
-          >
-            &#10094;
-          </a>
-          <div
-            className='image-container'
-            ref={imageContainerRef}
-            onScroll={handleScroll}
-          >
-            {[
-              BeautyCarousel9,
-              BeautyCarousel1,
-              BeautyCarousel2,
-              BeautyCarousel4,
-              BeautyCarousel5,
-              BeautyCarousel6,
-              BeautyCarousel7,
-              BeautyCarousel8,
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={BeautyCarousel2} alt='' tall />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={BeautyCarousel8} alt='' wide />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={BeautyCarousel6} alt='' tall />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={BeautyCarousel7} alt='' tall />
+        </div>
 
-              BeautyCarousel10,
-            ].map((image, index) => (
-              <div className='image' key={index}>
-                <img
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  style={{
-                    width: '400px',
-                    height: '500px',
-                    objectFit: 'cover',
-                  }}
-                />
-              </div>
-            ))}
-          </div>
-
-          <a
-            className={`next ${isAtEnd ? 'disabled' : ''}`}
-            onClick={() => scroll(1)}
-            style={{ visibility: isAtEnd ? 'hidden' : 'visible' }}
-          >
-            &#10095;
-          </a>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={BeautyCarousel5} alt='' wide />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={BeautyCarousel9} alt='' big />
         </div>
       </div>
     </>
   );
 };
-export default Alkalmi;
+export default Beauty;

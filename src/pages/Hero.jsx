@@ -33,14 +33,12 @@ const imageVariants = {
 
 const sliderVariants = {
   initial: {
-    x: 0,
+    x: '100%', // Indításkor jobbról indul
   },
   animate: {
-    x: '-220%',
+    x: 0, // Középre áll meg
     transition: {
-      duration: 20,
-      repeat: Infinity,
-      repeatType: 'mirror',
+      duration: 2, // A megállási idő
     },
   },
 };
@@ -75,8 +73,10 @@ const Hero = () => {
         className='slidingTextContainer'
         transition={{ delay: 3 }}
       >
-        Németh Brigitta Nóra <br />
-        Makeup Artist
+        <div style={{ textAlign: 'center' }}>
+          <div className='title'>Németh Brigitta Nóra</div>
+          <div className='subTitle'>Makeup Artist</div>
+        </div>
       </motion.div>
     </motion.div>
   );

@@ -1,12 +1,11 @@
 import './makeup.scss';
 import React, { useState, useRef } from 'react';
-import FashionCoverImg from '../assets/fashionCover.jpg';
 import FashionCarousel1 from '../assets/fashioncarousel1.jpg';
-import FashionCarousel4 from '../assets/fashioncarousel5.jpg';
-import FashionCarousel5 from '../assets/fashioncarousel6.jpg';
-import FashionCarousel6 from '../assets/fashioncarousel8.jpg';
-import FashionCarousel7 from '../assets/fashioncarousel9.jpeg';
-import FashionCarousel9 from '../assets/fashioncarousel9.jpg';
+import FashionCarousel2 from '../assets/fashioncarousel5.jpg';
+import FashionCarousel3 from '../assets/fashioncarousel6.jpg';
+import FashionCarousel4 from '../assets/fashioncarousel8.jpg';
+import FashionCarousel5 from '../assets/fashioncarousel9.jpeg';
+import FashionCarousel6 from '../assets/fashioncarousel9.jpg';
 
 const Alkalmi = () => {
   const imageContainerRef = useRef(null);
@@ -34,7 +33,6 @@ const Alkalmi = () => {
   return (
     <>
       <div className='parallax'>
-        <img src={FashionCoverImg} alt='Small Image' className='small-image' />
         <div className='text-container'>
           <h2>Fashion</h2>
           <p>
@@ -44,49 +42,71 @@ const Alkalmi = () => {
           </p>
         </div>
       </div>
+      <div className='wrapper'>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={FashionCarousel1} alt='' wide />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={FashionCarousel2} alt='' big />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          <img src={FashionCarousel3} alt='' big />
+        </div>
 
-      <div className='carousel'>
-        <div className='wrapper'>
-          <a
-            className={`prev ${isAtStart ? 'disabled' : ''}`}
-            onClick={() => scroll(-1)}
-            style={{ visibility: isAtStart ? 'hidden' : 'visible' }}
-          >
-            &#10094;
-          </a>
-          <div
-            className='image-container'
-            ref={imageContainerRef}
-            onScroll={handleScroll}
-          >
-            {[
-              FashionCarousel1,
-              FashionCarousel4,
-              FashionCarousel5,
-              FashionCarousel9,
-              FashionCarousel6,
-              FashionCarousel7,
-            ].map((image, index) => (
-              <div className='image' key={index}>
-                <img
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  style={{
-                    width: '400px',
-                    height: '500px',
-                    objectFit: 'cover',
-                  }}
-                />
-              </div>
-            ))}
-          </div>
-          <a
-            className={`next ${isAtEnd ? 'disabled' : ''}`}
-            onClick={() => scroll(1)}
-            style={{ visibility: isAtEnd ? 'hidden' : 'visible' }}
-          >
-            &#10095;
-          </a>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={FashionCarousel4} alt='' tall />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={FashionCarousel5} alt='' wide />
+        </div>
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '5px',
+          }}
+        >
+          {' '}
+          <img src={FashionCarousel6} alt='' tall />
         </div>
       </div>
     </>

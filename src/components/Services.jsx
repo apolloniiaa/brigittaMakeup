@@ -1,5 +1,4 @@
 import './services.scss';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Alkalmi from '../assets/bjticarousel8.jpeg';
 import Fotozas from '../assets/bjuticarousel3.JPG';
@@ -11,7 +10,7 @@ const Services = () => {
     <section className='container'>
       <h1>Szolgáltatások</h1>
 
-      <section className='card__container'>
+      <section className='card__container' id='services'>
         <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
           <div className='card__data'>
             <div className='card__icon'>
