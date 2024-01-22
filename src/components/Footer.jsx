@@ -27,7 +27,7 @@ const Footer = () => {
           <FaInstagram className='icon' />
         </a>
         <a
-          href='https://www.facebook.com/brigitta.n.nemeth'
+          href='https://www.facebook.com/nemethbrigittanora'
           target='_blank'
           rel='noopener noreferrer'
         >

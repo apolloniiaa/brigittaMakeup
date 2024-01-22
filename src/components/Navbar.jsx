@@ -16,14 +16,14 @@ const Navbar = () => {
         ></motion.span>
         <div className='social'>
           <a
-            href='https://www.instagram.com/nbn_mua '
+            href='https://www.instagram.com/nbn_mua'
             target='_blank'
             rel='noopener noreferrer'
           >
             <FaInstagram className='icon' />
           </a>
           <a
-            href='https://www.facebook.com/brigitta.n.nemeth'
+            href='https://www.facebook.com/nemethbrigittanora'
             target='_blank'
             rel='noopener noreferrer'
           >
