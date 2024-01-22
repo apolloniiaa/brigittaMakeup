@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className='footerIcons'>
         <a
-          href='https://www.instagram.com/nbn_mua?fbclid=IwAR0ryDSd02aqJn6F0kd1EV6vivnSskMH2KR7HcHQjbhNFcr4vs3YzE4I7r8 '
+          href='https://www.instagram.com/nbn_mua'
           target='_blank'
           rel='noopener noreferrer'
         >
