@@ -55,7 +55,7 @@ const Onsminkelo = () => {
             <p> Ennek díja</p>
             <ul>
               <li> 3,5 óra - 35.000Ft </li>
-              <li> Csoportos oktatás esetén 28.000Ft /fő</li>{' '}
+              <li> Csoportos oktatás esetén 30.000Ft /fő</li>{' '}
             </ul>
           </div>
         </div>

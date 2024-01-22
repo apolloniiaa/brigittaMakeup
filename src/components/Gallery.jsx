@@ -9,8 +9,8 @@ const Gallery = () => {
       </div>
 
       <div className='content'>
-        <h1>DOLGOZZUNK EGYÜTT!</h1>
-        <h1>DOLGOZZUNK EGYÜTT!</h1>
+        <h1>KERESS BIZALOMMAL!</h1>
+        <h1>KERESS BIZALOMMAL!</h1>
         <div className='gallery-link'>
           <Link to='/contact'>
             <p className='work-btn'>

@@ -15,7 +15,7 @@ const About = () => {
             húzóerő. Ezek jelentik számomra a sminkelést. Bátran kijelenthetem,
             hogy ez az életem. Ezekből következtetésképpen egyértelművé válik
             mindenki számára, hogy az én életemben ez nem csak munka. Örömmel
-            mondhatom, hogy megtaláltam azt, ami boldoggá tesz
+            mondhatom, hogy megtaláltam azt, ami boldoggá tesz.
           </p>
         </div>
       </div>

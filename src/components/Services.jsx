@@ -1,7 +1,10 @@
 import './services.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import WeddingCarousel1 from '../assets/fashioncarousel6.jpg';
+import Alkalmi from '../assets/bjticarousel8.jpeg';
+import Fotozas from '../assets/bjuticarousel3.JPG';
+import Mennyasszonyi from '../assets/weddingcarousel5.jpeg';
+import Onsminkelo from '../assets/bjticarousel4.jpeg';
 
 const Services = () => {
   return (
@@ -13,7 +16,7 @@ const Services = () => {
           <div className='card__data'>
             <div className='card__icon'>
               <img
-                src={WeddingCarousel1}
+                src={Alkalmi}
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -26,7 +29,7 @@ const Services = () => {
           <div className='card__data'>
             <div className='card__icon'>
               <img
-                src={WeddingCarousel1}
+                src={Fotozas}
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -39,7 +42,7 @@ const Services = () => {
           <div className='card__data'>
             <div className='card__icon'>
               <img
-                src={WeddingCarousel1}
+                src={Mennyasszonyi}
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -52,7 +55,7 @@ const Services = () => {
           <div className='card__data'>
             <div className='card__icon'>
               <img
-                src={WeddingCarousel1}
+                src={Onsminkelo}
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>

@@ -23,7 +23,6 @@ function RootLayout() {
       <Services />
       <Works />
       <Portfolio />
-
       <Gallery />
       <Links />
       <Footer />

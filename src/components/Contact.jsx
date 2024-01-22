@@ -1,5 +1,7 @@
 import './contact.scss';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
 
 const variants = {
   initial: {
@@ -15,7 +17,44 @@ const variants = {
     },
   },
 };
+
 const Contact = () => {
+  const form = useRef();
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_5aer6xh',
+        'template_jajj6o9',
+        form.current,
+        'VssbTgAZEOHDiXX9G'
+      )
+      .then(
+        (result) => {
+          setSuccess(true);
+          setError(false);
+        },
+        (error) => {
+          setError(true);
+          setSuccess(false);
+        }
+      );
+  };
+
+  const resetForm = () => {
+    // Reset form fields
+    form.current.reset();
+    // Clear success and error messages after a delay
+    setTimeout(() => {
+      setSuccess(false);
+      setError(false);
+    }, 3000);
+  };
+
   return (
     <div className='contact-wrapper'>
       <motion.div
@@ -25,7 +64,7 @@ const Contact = () => {
         whileInView='animate'
       >
         <motion.div className='textContainer' variants={variants}>
-          <motion.h1>Dolgozzunk együtt! </motion.h1>
+          <motion.h1>Keress Bizalommal! </motion.h1>
           <motion.div className='item' variants={variants}>
             <h2>Email</h2>
             <span>nemeth.brigittanora@gmail.com</span>
@@ -36,19 +75,49 @@ const Contact = () => {
           </motion.div>
           <motion.div className='item' variants={variants}>
             <h2>Telefonszám</h2>
-            <span>06304654677</span>
+            <span>+36303422482</span>
           </motion.div>
         </motion.div>
         <div className='formContainer'>
-          <form action=''>
-            <input type='text' required placeholder='Keresztnév' />
-            <input type='text' required placeholder='Vezetéknév' />
-            <input type rows={8} placeholder='Üzenet' />
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type='text'
+              required
+              placeholder='Keresztnév'
+              name='firstName'
+            />
+            <input
+              type='text'
+              required
+              placeholder='Vezetéknév'
+              name='lastName'
+            />
+            <input type='email' required placeholder='Email cím' name='email' />
+            <textarea rows={8} placeholder='Üzenet' name='message' />
             <button>Küldés</button>
+            {error && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                Sajnálom, nem sikerült. Kérlek próbáld újra!
+              </motion.div>
+            )}
+            {success && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                Köszönöm, hamarosan válaszolok!
+              </motion.div>
+            )}
           </form>
         </div>
       </motion.div>
     </div>
   );
 };
+
 export default Contact;

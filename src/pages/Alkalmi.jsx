@@ -31,15 +31,15 @@ const Alkalmi = () => {
           <h3>Alkalmi smink</h3>
           <p>
             Egy nő életében számos olyan esemény van, ahol fontos a jó
-            megjelenés,ahol mégszebbek,többek szeretnénk lenni akárcsak egy
+            megjelenés, ahol még szebbek, többek szeretnénk lenni, akár csak egy
             kicsit is. Legyen szó szülinapról, céges partyról, évfordulóról vagy
             fotózásról - egy jó smink mindig öltöztet! Célom az adottságok
-            kiemelése,mindenkinél egyénre szabva. Ezáltal sosem egy vakolat
-            születik,hanem egy letisztult megjelenés,ami nem változtatja meg a
-            karaktered. Természetesen ha az a cél,például egy különleges fotózás
-            alkalmával,bármi kivitelezhető. Minden esetben a legmagasabb
-            minőségű,professzionális termékekkel dolgozom, a smink garantáltan
-            tartós lesz.
+            kiemelése, mindenkinél egyénre szabva. Ezáltal sosem egy vakolat
+            születik, hanem egy letisztult megjelenés, ami nem változtatja meg a
+            karaktered. Természetesen, ha az a cél, például egy különleges
+            fotózás alkalmával, bármi kivitelezhető. Minden esetben a
+            legmagasabb minőségű, professzionális termékekkel dolgozom, a smink
+            garantáltan tartós lesz.
           </p>
         </section>
 
@@ -56,7 +56,7 @@ const Alkalmi = () => {
           <div className='text-box'>
             <p> Ennek díja</p>
             <ul>
-              <li>16.000Ft </li>
+              <li>14.500Ft </li>
               <li> igény esetén műszempilla kérhető felárral</li>{' '}
             </ul>
           </div>

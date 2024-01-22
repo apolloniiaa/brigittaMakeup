@@ -2,6 +2,7 @@ import React from 'react';
 import './portfolio.scss';
 import { Link } from 'react-router-dom';
 import PortfolioPhoto from '../assets/portfolio2.jpg';
+import PortfolioPhotoBack from '../assets/portfolioback.jpg';
 
 const sliderVariants = {
   initial: {
@@ -28,7 +29,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div className='images'>
-          <img src={PortfolioPhoto} alt='Main Image' />
+          <img src={PortfolioPhotoBack} alt='Main Image' />
           <img src={PortfolioPhoto} alt='Main Image' />
         </div>
       </div>

@@ -40,14 +40,6 @@ const Footer = () => {
         >
           <FaEnvelope className='icon' />
         </a>
-
-        <a
-          href='https://www.linkedin.com/in/janos-balogh-83a21521b/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaLinkedin className='icon' />
-        </a>
       </div>
     </div>
   );

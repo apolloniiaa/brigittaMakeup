@@ -10,11 +10,11 @@ const Fotozas = () => {
           <p>
             Számos produkcióban dolgoztam már sorozatoktól kezdve a
             videoklipeken át a márkafotózásig. Ezek során volt lehetőségem több
-            ismert személlyel, színésszel,énekessel együtt dolgozni,mint például
-            Ónodi Eszter,Weisz Fanni,Hajdu Steve,Varga Miklós,Nagy Feró,Pataky
-            Attila,Sasvári Sándor…stb. Mindegyik más és más,legyen szó
-            filmforgatásról,reklámról vagy videoklipről. Igények,kérések alapján
-            dolgozom. Ide tartoznak a céges -, és kampányfotózások.
+            ismert személlyel, színésszel,énekessel együtt dolgozni, mint
+            például Ónodi Eszter, Weisz Fanni, Hajdu Steve, Varga Miklós, Nagy
+            Feró, Pataky Attila, Sasvári Sándor…stb.Mindegyik más és más, legyen
+            szó filmforgatásról, reklámról vagy videoklipről.Igények, kérések
+            alapján dolgozom. Ide tartoznak a céges -, és kampányfotózások is.
           </p>
         </section>
       </div>
@@ -30,8 +30,9 @@ const Fotozas = () => {
             <p> Díja</p>
             <ul>
               <li>
-                Egyénileg szabom az árakat időtartamtól és a modellek számától
-                függően.{' '}
+                Egyéni árazást alkalmazok, amely a időtartam és a modellek száma
+                szerint változik. Az árak meghatározásához minden esetben
+                előzetes egyeztetés szükséges.
               </li>
             </ul>
           </div>

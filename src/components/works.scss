@@ -48,7 +48,6 @@ $breakpoint: 1024px;
     height: 100vh;
 
     .image-container2 {
-      background-color: aqua;
       height: 100%;
       flex: 1;
       background: url('../assets/intro2.jpg');
@@ -167,7 +166,7 @@ $breakpoint: 1024px;
       display: block;
       height: auto;
       .image-container {
-        min-height: 50vh;
+        min-height: 516px;
         flex: 0;
       }
       .text-container {
@@ -188,7 +187,7 @@ $breakpoint: 1024px;
       flex-direction: column-reverse;
       height: auto;
       .image-container2 {
-        min-height: 50vh;
+        min-height: 516px;
         flex: 0;
       }
       .text-container2 {
@@ -208,7 +207,7 @@ $breakpoint: 1024px;
       height: auto;
       .image-container3 {
         height: auto;
-        min-height: 50vh;
+        min-height: 516px;
       }
       .text-container3 {
         height: auto;

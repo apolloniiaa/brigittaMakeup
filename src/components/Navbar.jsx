@@ -1,9 +1,4 @@
-import {
-  FaInstagram,
-  FaFacebook,
-  FaEnvelope,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 import './navbar.scss';
 import { motion } from 'framer-motion';
@@ -34,13 +29,7 @@ const Navbar = () => {
           >
             <FaFacebook className='icon' />
           </a>
-          <a
-            href='https://www.linkedin.com/in/janos-balogh-83a21521b/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaLinkedin className='icon' />
-          </a>
+
           <a
             href='mailto:nemeth.brigittanora@gmail.com'
             target='_blank'

@@ -89,6 +89,9 @@
   text-align: center;
   background-color: #ccc;
   flex-direction: column;
+  // .weeding-text {
+  //   text-align: left;
+  // }
   @include tablet {
     padding: 5rem;
   }
