@@ -25,20 +25,23 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log('Sending email...');
 
     emailjs
       .sendForm(
-        'service_5aer6xh',
-        'template_jajj6o9',
+        'service_k0bdpki',
+        'template_s4h5kjb',
         form.current,
-        'VssbTgAZEOHDiXX9G'
+        'SzcUArt8I-0R3yra7'
       )
       .then(
         (result) => {
+          console.log('Email sent successfully:', result);
           setSuccess(true);
           setError(false);
         },
         (error) => {
+          console.error('Error sending email:', error);
           setError(true);
           setSuccess(false);
         }
