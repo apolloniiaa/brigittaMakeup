@@ -42,8 +42,6 @@ const Alkalmi = () => {
             garantáltan tartós lesz.
           </p>
         </section>
-
-        <section className='background-section'></section>
       </div>
 
       <div className='qa'>
