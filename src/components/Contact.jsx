@@ -5,11 +5,11 @@ import { useRef, useState } from 'react';
 
 const variants = {
   initial: {
-    y: 500,
+    x: 500,
     opacity: 0,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       duration: 1,
@@ -109,11 +109,12 @@ const Contact = () => {
             )}
             {success && (
               <motion.div
+                className='message-text'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
               >
-                Köszönöm, hamarosan válaszolok!
+                Köszönöm, hamarosan válaszolok! ⭐️
               </motion.div>
             )}
           </form>

@@ -1,32 +1,19 @@
 import './makeup.scss';
-import React, { useState, useRef } from 'react';
+import Navbar from '../components/Navbar';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react'; // Import useEffect
 
 const Alkalmi = () => {
-  const imageContainerRef = useRef(null);
-  const [isAtStart, setIsAtStart] = useState(true);
-  const [isAtEnd, setIsAtEnd] = useState(false);
+  const { pathname } = useLocation();
 
-  const handleScroll = () => {
-    const container = imageContainerRef.current;
-    const isAtStart = container.scrollLeft === 0;
-    const isAtEnd =
-      container.scrollLeft + container.clientWidth >= container.scrollWidth;
-
-    setIsAtStart(isAtStart);
-    setIsAtEnd(isAtEnd);
-  };
-
-  const scroll = (direction) => {
-    const container = imageContainerRef.current;
-    const far = (container.clientWidth / 2) * direction;
-    const pos = container.scrollLeft + far;
-
-    container.scrollTo({ left: pos, behavior: 'smooth' });
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
-      <div className='parallax-container'>
+      <Navbar />
+      <div className='parallax-container' id='alkalmi'>
         <section className='text-section'>
           <h3>Alkalmi smink</h3>
           <p>

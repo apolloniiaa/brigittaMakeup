@@ -32,6 +32,9 @@
     align-items: center;
     height: 800px;
     z-index: 1;
+    @include tablet {
+      height: auto;
+    }
 
     img {
       width: 530px;
@@ -52,7 +55,7 @@
     position: absolute;
     font-size: 6rem;
     white-space: nowrap;
-    top: 70%;
+    top: 75%;
     width: auto;
     z-index: 1;
     color: #e7ba90;

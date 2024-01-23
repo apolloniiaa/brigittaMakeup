@@ -1,7 +1,5 @@
 import './makeup.scss';
 
-import ArtCoverImg from '../assets/artcarousel1.jpg';
-
 import ArtCarousel2 from '../assets/artcarousel2.jpg';
 import ArtCarousel3 from '../assets/artcarousel3.jpeg';
 import ArtCarousel4 from '../assets/artcarousel4.jpeg';
@@ -10,9 +8,12 @@ import ArtCarousel6 from '../assets/artcarousel6.jpeg';
 import ArtCarousel7 from '../assets/artcarousel7.jpeg';
 import ArtCarousel8 from '../assets/artcarousel8.jpeg';
 
+import Navbar from '../components/Navbar';
+
 const Art = () => {
   return (
     <>
+      <Navbar />
       <div className='parallax'>
         <div className='text-container'>
           <h2>Art</h2>

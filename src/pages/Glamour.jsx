@@ -1,5 +1,5 @@
 import './makeup.scss';
-import React, { useState, useRef } from 'react';
+import Navbar from '../components/Navbar';
 
 import GlamourCarousel1 from '../assets/gkmcarousel1.jpg';
 import GlamourCarousel2 from '../assets/gkmcarousel2.jpg';
@@ -10,9 +10,10 @@ import GlamourCarousel6 from '../assets/gkmcarousel6.jpeg';
 import GlamourCarousel7 from '../assets/gkmcarousel7.jpeg';
 import GlamourCarousel8 from '../assets/gkmcarousel8.jpeg';
 
-const Alkalmi = () => {
+const Glamour = () => {
   return (
     <>
+      <Navbar />
       <div className='parallax'>
         <div className='text-container'>
           <h2>Glamour</h2>
@@ -116,4 +117,4 @@ const Alkalmi = () => {
     </>
   );
 };
-export default Alkalmi;
+export default Glamour;

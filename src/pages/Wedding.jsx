@@ -1,5 +1,7 @@
 import './makeup.scss';
-import React, { useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react'; // Import useEffect
+
 import WeddingCarousel1 from '../assets/weddingcarousel1.jpeg';
 import WeddingCarousel2 from '../assets/weddingcarousel2.jpeg';
 import WeddingCarousel3 from '../assets/weddingcarousel3.jpeg';
@@ -12,9 +14,18 @@ import WeddingCarousel9 from '../assets/weddingcarousel9.jpeg';
 import WeddingCarousel10 from '../assets/weddingcarousel10.jpeg';
 import WeddingCarousel11 from '../assets/weddingcarousel11.jpeg';
 import WeddingCarousel12 from '../assets/weddingcarousel12.jpeg';
+
+import Navbar from '../components/Navbar';
 const Wedding = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
+      <Navbar />
       <div className='parallax'>
         <div className='text-container'>
           <h2>Mennyaszonyi Smink</h2>

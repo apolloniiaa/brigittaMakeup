@@ -1,9 +1,17 @@
-import './makeup.scss';
-import React, { useState, useRef } from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Fotozas = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
+      <Navbar />
       <div className='parallax-container'>
         <section className='text-section'>
           <h3>Fotózás / Forgatás</h3>

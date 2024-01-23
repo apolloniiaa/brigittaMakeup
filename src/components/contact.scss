@@ -4,6 +4,11 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
+
+  @include mobile {
+    background-image: none;
+  }
 }
 .contact {
   margin: auto;
@@ -19,7 +24,6 @@
     width: 100%;
     padding: 10px;
     flex-direction: column;
-    height: auto;
     gap: 4px;
   }
 
@@ -28,6 +32,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @include mobile {
+      flex: 0;
+    }
 
     @include tablet {
       gap: 20px;
@@ -51,20 +58,31 @@
       }
     }
     span {
-      font-weight: 600;
+      font-weight: 400;
+
+      @include tablet {
+        font-size: 1.7rem;
+      }
       @include mobile {
         padding: 8px;
+        font-size: 1rem;
       }
     }
   }
   .formContainer {
     flex: 1;
     height: 40vh;
+
+    @include tablet {
+      height: auto;
+    }
     form {
       display: flex;
       flex-direction: column;
       gap: 40px;
-
+      .message-text {
+        font-size: 2rem;
+      }
       input,
       textarea {
         padding: 20px;
@@ -74,9 +92,17 @@
         border-radius: 5px;
         outline: none;
         font-size: 1.5rem;
+        @include tablet {
+          font-size: 1.5rem;
+        }
         @include mobile {
           padding: 7px;
-          font-size: 1.3rem;
+          font-size: 1rem;
+        }
+
+        &::placeholder {
+          color: white;
+          padding: 5px;
         }
       }
       button {
@@ -85,8 +111,12 @@
         background-color: #e7ba90;
         cursor: pointer;
         font-weight: 500;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 5px;
         @include mobile {
-          padding: 8px;
+          padding: 7px;
+          font-size: 1rem;
         }
       }
     }
@@ -97,7 +127,6 @@
     }
     @include mobile {
       width: auto;
-      padding: 1rem;
     }
   }
 }

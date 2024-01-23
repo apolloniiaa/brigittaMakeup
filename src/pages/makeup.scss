@@ -52,7 +52,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #ccc;
     flex-direction: column;
 
     @include tablet {
@@ -66,7 +65,6 @@
       margin-bottom: 3rem;
       font-size: 5rem;
       font-family: 'Alex Brush', cursive;
-      color: #444444;
       @include mobile {
         font-size: 2rem;
       }
@@ -74,7 +72,6 @@
     p {
       width: 50%;
       font-size: 1.5rem;
-      color: #444444;
 
       @include tablet {
         width: auto;
@@ -91,6 +88,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #ccc;
   .centered-container {
     position: relative;
     .centered-image {

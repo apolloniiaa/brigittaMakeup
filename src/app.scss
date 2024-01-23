@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Gelasio:ital,wght@0,400;0,500;1,400;1,600&display=swap');
 
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-snap-type: y mandatory;
+//   scroll-behavior: smooth;
+// }
 html,
 body {
   height: 100%;
@@ -19,7 +19,7 @@ body {
 }
 body {
   background: #302d2f;
-  scroll-behavior: auto !important;
+  // scroll-behavior: auto !important;
   color: white;
 }
 a {
