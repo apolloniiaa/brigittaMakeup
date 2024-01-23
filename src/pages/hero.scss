@@ -37,8 +37,7 @@
     }
 
     img {
-      width: 530px;
-      height: 500px;
+      height: 490px;
       object-fit: cover;
 
       @include tablet {
@@ -55,7 +54,7 @@
     position: absolute;
     font-size: 6rem;
     white-space: nowrap;
-    top: 75%;
+    top: 77%;
     width: auto;
     z-index: 1;
     color: #e7ba90;
