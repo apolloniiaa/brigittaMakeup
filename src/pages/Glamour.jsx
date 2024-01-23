@@ -1,5 +1,7 @@
 import './makeup.scss';
-import Navbar from '../components/Navbar';
+
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import GlamourCarousel1 from '../assets/gkmcarousel1.jpg';
 import GlamourCarousel2 from '../assets/gkmcarousel2.jpg';
@@ -10,10 +12,17 @@ import GlamourCarousel6 from '../assets/gkmcarousel6.jpeg';
 import GlamourCarousel7 from '../assets/gkmcarousel7.jpeg';
 import GlamourCarousel8 from '../assets/gkmcarousel8.jpeg';
 
+import { Link } from 'react-router-dom';
+
 const Glamour = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
-      <Navbar />
       <div className='parallax'>
         <div className='text-container'>
           <h2>Glamour</h2>
@@ -22,6 +31,11 @@ const Glamour = () => {
             sminkjeimről,amire legtöbb esetben a fényes,vagy erősebb szemsmink
             jellemző.
           </p>
+          <Link to='/works'>
+            <p className='work-btn'>
+              Vissza a Gallériához <Link to='/works'></Link>
+            </p>
+          </Link>
         </div>
       </div>
 

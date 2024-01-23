@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 
 const Fotozas = () => {
   const { pathname } = useLocation();
@@ -11,7 +10,6 @@ const Fotozas = () => {
 
   return (
     <>
-      <Navbar />
       <div className='parallax-container'>
         <section className='text-section'>
           <h3>Fotózás / Forgatás</h3>

@@ -1,5 +1,4 @@
 import './makeup.scss';
-import Navbar from '../components/Navbar';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react'; // Import useEffect
 const Onsminkelo = () => {
@@ -11,7 +10,6 @@ const Onsminkelo = () => {
 
   return (
     <>
-      <Navbar />
       <div className='parallax-container'>
         <section className='text-section'>
           <h3>Önsminkelő oktatás</h3>

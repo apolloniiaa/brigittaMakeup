@@ -4,19 +4,6 @@ import { Link } from 'react-router-dom';
 import PortfolioPhoto from '../assets/portfolio2.jpg';
 import PortfolioPhotoBack from '../assets/portfolioback.jpg';
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: '220%',
-    transition: {
-      duration: 20,
-      repeat: Infinity,
-      repeatType: 'mirror',
-    },
-  },
-};
 const Portfolio = () => {
   return (
     <div className='portfolio' id='portfolio'>

@@ -1,6 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import './works.scss';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import BeautyCoverImg from '../assets/beautyCover.jpg';
 import GlamourCoverImg from '../assets/glamourCover.jpeg';
 import WeddingCoverImg from '../assets/weddingfomain.jpg';
@@ -8,6 +10,11 @@ import FashionCoverImg from '../assets/fashionCover.jpg';
 import ArtCoverImg from '../assets/artcarousel3.jpeg';
 
 const Works = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className='workee'>
       <div className='works'>

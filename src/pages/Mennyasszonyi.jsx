@@ -1,6 +1,5 @@
 import './makeup.scss';
 import { useLocation } from 'react-router-dom';
-import Navbar from '../components/Navbar';
 import React, { useEffect } from 'react';
 
 const Mennyasszonyi = () => {
@@ -12,7 +11,6 @@ const Mennyasszonyi = () => {
 
   return (
     <>
-      <Navbar />
       <div className='parallax-container'>
         <section className='text-section'>
           <h3>Mennyasszonyi smink</h3>

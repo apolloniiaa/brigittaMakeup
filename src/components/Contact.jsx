@@ -1,22 +1,7 @@
 import './contact.scss';
-import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-
-const variants = {
-  initial: {
-    x: 500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.5,
-    },
-  },
-};
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   const form = useRef();
@@ -48,79 +33,73 @@ const Contact = () => {
       );
   };
 
-  const resetForm = () => {
-    // Reset form fields
-    form.current.reset();
-    // Clear success and error messages after a delay
-    setTimeout(() => {
-      setSuccess(false);
-      setError(false);
-    }, 3000);
-  };
-
   return (
-    <div className='contact-wrapper'>
-      <motion.div
-        className='contact'
-        variants={variants}
-        initial='initial'
-        whileInView='animate'
-      >
-        <motion.div className='textContainer' variants={variants}>
-          <motion.h1>Keress Bizalommal! </motion.h1>
-          <motion.div className='item' variants={variants}>
-            <h2>Email</h2>
-            <span>nemeth.brigittanora@gmail.com</span>
-          </motion.div>
-          <motion.div className='item' variants={variants}>
-            <h2>Cím</h2>
-            <span>Budapest, Magyarország</span>
-          </motion.div>
-          <motion.div className='item' variants={variants}>
-            <h2>Telefonszám</h2>
-            <span>+36303422482</span>
-          </motion.div>
-        </motion.div>
-        <div className='formContainer'>
-          <form ref={form} onSubmit={sendEmail}>
-            <input
-              type='text'
-              required
-              placeholder='Keresztnév'
-              name='firstName'
-            />
-            <input
-              type='text'
-              required
-              placeholder='Vezetéknév'
-              name='lastName'
-            />
-            <input type='email' required placeholder='Email cím' name='email' />
-            <textarea rows={8} placeholder='Üzenet' name='message' />
-            <button>Küldés</button>
-            {error && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                Sajnálom, nem sikerült. Kérlek próbáld újra!
-              </motion.div>
-            )}
-            {success && (
-              <motion.div
-                className='message-text'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                Köszönöm, hamarosan válaszolok! ⭐️
-              </motion.div>
-            )}
-          </form>
+    <>
+      {' '}
+      <Navbar />
+      <div className='contact-wrapper'>
+        <div className='contact' initial='initial' whileInView='animate'>
+          <div className='textContainer'>
+            <h1>Keress Bizalommal! </h1>
+            <div className='item'>
+              <h2>Email</h2>
+              <span>nemeth.brigittanora@gmail.com</span>
+            </div>
+            <div className='item'>
+              <h2>Cím</h2>
+              <span>Budapest, Magyarország</span>
+            </div>
+            <div className='item'>
+              <h2>Telefonszám</h2>
+              <span>+36303422482</span>
+            </div>
+          </div>
+          <div className='formContainer'>
+            <form ref={form} onSubmit={sendEmail}>
+              <input
+                type='text'
+                required
+                placeholder='Keresztnév'
+                name='firstName'
+              />
+              <input
+                type='text'
+                required
+                placeholder='Vezetéknév'
+                name='lastName'
+              />
+              <input
+                type='email'
+                required
+                placeholder='Email cím'
+                name='email'
+              />
+              <textarea rows={8} placeholder='Üzenet' name='message' />
+              <button>Küldés</button>
+              {error && (
+                <div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  Sajnálom, nem sikerült. Kérlek próbáld újra!
+                </div>
+              )}
+              {success && (
+                <div
+                  className='message-text'
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  Köszönöm, hamarosan válaszolok! ⭐️
+                </div>
+              )}
+            </form>
+          </div>
         </div>
-      </motion.div>
-    </div>
+      </div>
+    </>
   );
 };
 

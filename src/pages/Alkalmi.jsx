@@ -1,5 +1,5 @@
 import './makeup.scss';
-import Navbar from '../components/Navbar';
+
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react'; // Import useEffect
 
@@ -12,7 +12,6 @@ const Alkalmi = () => {
 
   return (
     <>
-      <Navbar />
       <div className='parallax-container' id='alkalmi'>
         <section className='text-section'>
           <h3>Alkalmi smink</h3>
