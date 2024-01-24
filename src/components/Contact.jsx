@@ -1,7 +1,6 @@
 import './contact.scss';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import Navbar from '../components/Navbar';
 
 const Contact = () => {
   const form = useRef();
@@ -35,8 +34,6 @@ const Contact = () => {
 
   return (
     <>
-      {' '}
-      <Navbar />
       <div className='contact-wrapper'>
         <div className='contact' initial='initial' whileInView='animate'>
           <div className='textContainer'>
