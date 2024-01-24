@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import BeautyCoverImg from '../assets/beautyCover.jpg';
-import GlamourCoverImg from '../assets/glamourCover.jpeg';
+import GlamourCoverImg from '../assets/gkmcarousel9.jpg';
 import WeddingCoverImg from '../assets/weddingfomain.jpg';
 import FashionCoverImg from '../assets/fashionCover.jpg';
 import ArtCoverImg from '../assets/artcarousel3.jpeg';
