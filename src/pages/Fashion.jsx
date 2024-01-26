@@ -36,7 +36,7 @@ const FashionCarousel = () => {
           </p>
           <Link to='/works'>
             <p className='work-btn'>
-              Vissza a Gallériához <Link to='/works'></Link>
+              Vissza a galériához <Link to='/works'></Link>
             </p>
           </Link>
         </div>
