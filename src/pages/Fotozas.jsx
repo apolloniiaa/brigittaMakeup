@@ -36,9 +36,8 @@ const Fotozas = () => {
             <p> Díja</p>
             <ul>
               <li>
-                Egyéni árazást alkalmazok, amely a időtartam és a modellek száma
-                szerint változik. Az árak meghatározásához minden esetben
-                előzetes egyeztetés szükséges.
+                Igények,kérések alapján dolgozom. Ennek a díjszabásához minden
+                esetben előreegyeztetés szükséges.
               </li>
             </ul>
           </div>

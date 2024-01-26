@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import ShowMoreButton from '../components/ShowMoreBtn'; // Importáltam a ShowMoreButton komponenst
-import React, { useEffect, useState } from 'react';
+
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './makeup.scss';
 import BeautyCarousel1 from '../assets/bjtcarousel1.jpeg';
@@ -15,23 +15,10 @@ import BeautyCarousel10 from '../assets/bjticarousel10.jpeg';
 
 const Beauty = () => {
   const { pathname } = useLocation();
-  const [visibleImages, setVisibleImages] = useState(4);
-  const [showMore, setShowMore] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-
-  const handleToggleImages = () => {
-    if (showMore) {
-      const increment = window.innerWidth >= 768 ? 3 : 4;
-      setVisibleImages((prevVisibleImages) => prevVisibleImages + increment);
-    } else {
-      setVisibleImages(9);
-      setShowMore(false);
-    }
-    setShowMore(!showMore);
-  };
 
   return (
     <>
@@ -63,27 +50,20 @@ const Beauty = () => {
           BeautyCarousel7,
           BeautyCarousel5,
           BeautyCarousel9,
-        ]
-          .slice(0, visibleImages)
-          .map((image, index) => (
-            <div
-              key={index}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '5px',
-              }}
-            >
-              <img src={image} alt='' />
-            </div>
-          ))}
+        ].map((image, index) => (
+          <div
+            key={index}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              borderRadius: '5px',
+            }}
+          >
+            <img src={image} alt='' />
+          </div>
+        ))}
       </div>
-      {visibleImages < 10 && (
-        <ShowMoreButton onClick={handleToggleImages}>
-          {visibleImages < 9 ? 'Mutass többet' : 'Mutass kevesebbet'}
-        </ShowMoreButton>
-      )}
     </>
   );
 };

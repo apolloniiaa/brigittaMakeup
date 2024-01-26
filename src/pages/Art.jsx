@@ -13,27 +13,26 @@ import ArtCarousel6 from '../assets/artcarousel6.jpeg';
 import ArtCarousel7 from '../assets/artcarousel7.jpeg';
 import ArtCarousel8 from '../assets/artcarousel8.jpeg';
 import ArtCarousel9 from '../assets/artcarousel9.jpeg';
-import ShowMoreButton from '../components/ShowMoreBtn';
 
 const Art = () => {
   const { pathname } = useLocation();
   const [visibleImages, setVisibleImages] = useState(4);
-  const [showMore, setShowMore] = useState(true);
+  // const [showMore, setShowMore] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const handleToggleImages = () => {
-    const increment = window.innerWidth >= 768 ? 3 : 4;
-    const newVisibleImages = visibleImages + increment;
+  // const handleToggleImages = () => {
+  //   const increment = window.innerWidth >= 768 ? 3 : 4;
+  //   const newVisibleImages = visibleImages + increment;
 
-    if (newVisibleImages >= 9) {
-      setVisibleImages(9);
-    } else {
-      setVisibleImages(newVisibleImages);
-    }
-  };
+  //   if (newVisibleImages >= 9) {
+  //     setVisibleImages(9);
+  //   } else {
+  //     setVisibleImages(newVisibleImages);
+  //   }
+  // };
 
   return (
     <>
@@ -63,7 +62,7 @@ const Art = () => {
           ArtCarousel8,
           ArtCarousel9,
         ]
-          .slice(0, visibleImages)
+          // .slice(0, visibleImages)
           .map((image, index) => (
             <div
               key={index}
@@ -79,11 +78,11 @@ const Art = () => {
           ))}
       </div>
 
-      {visibleImages < 9 && (
+      {/* {visibleImages < 9 && (
         <ShowMoreButton onClick={handleToggleImages}>
           {visibleImages < 8 ? 'Mutass többet' : 'Mutass kevesebbet'}
         </ShowMoreButton>
-      )}
+      )} */}
     </>
   );
 };

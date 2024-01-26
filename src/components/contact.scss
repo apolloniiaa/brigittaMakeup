@@ -25,6 +25,7 @@
     padding: 10px;
     flex-direction: column;
     gap: 4px;
+    height: auto;
   }
 
   .textContainer {
@@ -50,6 +51,7 @@
       font-size: 4rem;
       width: 80px;
       line-height: 70px;
+      color: black;
       @include tablet {
         width: 100%;
       }

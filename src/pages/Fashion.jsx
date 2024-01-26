@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './makeup.scss';
-import ShowMoreButton from '../components/ShowMoreBtn'; // Importáltam a ShowMoreButton komponenst
 
 import FashionCarousel1 from '../assets/fashioncarousel1.jpg';
 import FashionCarousel8 from '../assets/fashioncarousel2.jpg';
@@ -20,22 +19,11 @@ import FashionCarousel11 from '../assets/fashioncarousel12.jpeg';
 
 const FashionCarousel = () => {
   const { pathname } = useLocation();
-  const [visibleImages, setVisibleImages] = useState(4);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const handleToggleImages = () => {
-    const increment = window.innerWidth >= 768 ? 3 : 4;
-    const newVisibleImages = visibleImages + increment;
-
-    if (newVisibleImages >= 11) {
-      setVisibleImages(11);
-    } else {
-      setVisibleImages(newVisibleImages);
-    }
-  };
   return (
     <>
       <div className='parallax'>
@@ -66,27 +54,20 @@ const FashionCarousel = () => {
           FashionCarousel9,
           FashionCarousel10,
           FashionCarousel11,
-        ]
-          .slice(0, visibleImages)
-          .map((image, index) => (
-            <div
-              key={index}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                borderRadius: '5px',
-              }}
-            >
-              <img src={image} alt='' />
-            </div>
-          ))}
+        ].map((image, index) => (
+          <div
+            key={index}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              borderRadius: '5px',
+            }}
+          >
+            <img src={image} alt='' />
+          </div>
+        ))}
       </div>
-      {visibleImages < 11 && (
-        <ShowMoreButton onClick={handleToggleImages}>
-          {visibleImages < 10 ? 'Mutass többet' : 'Mutass kevesebbet'}
-        </ShowMoreButton>
-      )}
     </>
   );
 };

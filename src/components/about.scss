@@ -17,7 +17,6 @@
     position: relative;
 
     .title {
-      font-size: 12rem;
       margin-bottom: 20px;
       position: absolute;
       position: absolute;
@@ -30,7 +29,14 @@
       transform: translate(-50%, -50%);
 
       @include laptop {
-        top: 40%;
+        // top: 54%;
+      }
+      @include tablet {
+        display: none;
+        // top: 39%;
+      }
+      @include mobile {
+        // top: 47%;
       }
     }
 
@@ -47,6 +53,10 @@
 
         @include laptop {
           width: 260px;
+        }
+        @include tablet {
+          margin-bottom: 0;
+          width: 120px;
         }
       }
 
@@ -106,8 +116,7 @@
         padding: 10rem 0;
 
         p {
-          padding: 0;
-          width: 70%;
+          width: auto;
           text-align: center;
         }
       }
@@ -119,7 +128,7 @@
     flex-direction: column;
     .content-container {
       .title {
-        font-size: 4rem;
+        font-size: 3rem;
       }
       .small-image-container {
         padding: 10rem 0;

@@ -2,6 +2,34 @@
 
 .workee {
   transition: background-position 0.5s ease;
+  .work-btn {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    font-size: 2rem;
+    font-style: italic;
+    border: 1px dotted #e7ba90;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    width: 244px;
+    @include mobile {
+      width: 180px;
+      font-size: 0.7rem;
+    }
+
+    &:hover {
+      background-color: #e7ba90;
+      color: white;
+      transform: scale(1.1);
+      @include mobile {
+        transform: none;
+      }
+    }
+  }
 }
 
 .works {
@@ -24,7 +52,7 @@
       width: 400px;
       object-fit: cover;
       border-radius: 8px;
-      box-shadow: 20px -16px 0px 0px rgb(255 216 159);
+      box-shadow: 20px -16px 0px 0px #e7ba90;
       transition: transform 0.2s ease, filter 0.5s ease;
 
       &:hover {
@@ -32,22 +60,25 @@
         filter: grayscale(100%);
       }
       @include mobile {
-        width: 250px;
+        width: 200px;
       }
     }
 
     p {
       margin: 0;
-      color: #eec992;
+      color: #e7ba90;
       font-size: 3rem;
       padding: 2rem;
       font-family: 'Alex Brush';
       letter-spacing: 5px;
+      @include mobile {
+        font-size: 2rem;
+      }
     }
   }
 
   @media (max-width: 1440px) {
-    padding-top: 10rem;
+    padding-top: 5rem;
 
     .card {
       padding: 2rem;

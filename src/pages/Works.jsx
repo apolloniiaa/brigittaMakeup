@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './works.scss';
+
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ import WeddingCoverImg from '../assets/weddingfomain.jpg';
 import FashionCoverImg from '../assets/fashionCover.jpg';
 import ArtCoverImg from '../assets/artcarousel3.jpeg';
 
+// import HomeBtn from '../components/HomeBtn';
 const Works = () => {
   const { pathname } = useLocation();
 
@@ -16,15 +18,21 @@ const Works = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className='workee'>
-      <div className='works'>
-        <Card to='/beauty' title='Beauty' imageUrl={BeautyCoverImg} />
-        <Card to='/glamour' title='Glamour' imageUrl={GlamourCoverImg} />
-        <Card to='/wedding' title='Esküvői' imageUrl={WeddingCoverImg} />
-        <Card to='/fashion' title='Divat' imageUrl={FashionCoverImg} />
-        <Card to='/art' title='Art' imageUrl={ArtCoverImg} />
+    <>
+      <div className='workee'>
+        {/* <HomeBtn /> */}
+        <Link to='/' className='work-btn'>
+          Vissza a főoldalra
+        </Link>
+        <div className='works'>
+          <Card to='/beauty' title='Beauty' imageUrl={BeautyCoverImg} />
+          <Card to='/glamour' title='Glamour' imageUrl={GlamourCoverImg} />
+          <Card to='/wedding' title='Esküvői' imageUrl={WeddingCoverImg} />
+          <Card to='/fashion' title='Divat' imageUrl={FashionCoverImg} />
+          <Card to='/art' title='Art' imageUrl={ArtCoverImg} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import './hero.scss';
 import { motion } from 'framer-motion';
 import MaingImg from '../assets/homePage.jpg';
+import { Link } from 'react-router-dom';
 
 const bgVariants = {
   initial: {
@@ -78,6 +79,7 @@ const Hero = () => {
           <div className='subTitle'>Makeup Artist</div>
         </div>
       </motion.div>
+      {/* <Link to='/'></Link> */}
     </motion.div>
   );
 };

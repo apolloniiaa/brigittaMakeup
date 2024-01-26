@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './makeup.scss';
-import ShowMoreButton from '../components/ShowMoreBtn'; // Importáld a ShowMoreButton komponenst
+// import ShowMoreButton from '../components/ShowMoreBtn'; // Importáld a ShowMoreButton komponenst
 import WeddingCarousel1 from '../assets/weddingcarousel1.jpeg';
 import WeddingCarousel2 from '../assets/weddingcarousel2.jpeg';
 import WeddingCarousel3 from '../assets/weddingcarousel3.jpeg';
@@ -20,22 +20,22 @@ import { Link } from 'react-router-dom';
 
 const Wedding = () => {
   const { pathname } = useLocation();
-  const [visibleImages, setVisibleImages] = useState(4);
+  // const [visibleImages, setVisibleImages] = useState(4);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const handleToggleImages = () => {
-    const increment = window.innerWidth >= 768 ? 3 : 4;
-    const newVisibleImages = visibleImages + increment;
+  // const handleToggleImages = () => {
+  //   const increment = window.innerWidth >= 768 ? 3 : 4;
+  //   const newVisibleImages = visibleImages + increment;
 
-    if (newVisibleImages >= 12) {
-      setVisibleImages(12);
-    } else {
-      setVisibleImages(newVisibleImages);
-    }
-  };
+  //   if (newVisibleImages >= 12) {
+  //     setVisibleImages(12);
+  //   } else {
+  //     setVisibleImages(newVisibleImages);
+  //   }
+  // };
 
   return (
     <>
@@ -50,7 +50,7 @@ const Wedding = () => {
           </p>
           <Link to='/works'>
             <p className='work-btn'>
-              Vissza a Gallériához <Link to='/works'></Link>
+              Vissza a Galériához <Link to='/works'></Link>
             </p>
           </Link>
         </div>
@@ -71,7 +71,7 @@ const Wedding = () => {
           WeddingCarousel11,
           WeddingCarousel12,
         ]
-          .slice(0, visibleImages)
+          // .slice(0, visibleImages)
           .map((image, index) => (
             <div
               key={index}
@@ -87,11 +87,11 @@ const Wedding = () => {
           ))}
       </div>
 
-      {visibleImages < 12 && (
+      {/* {visibleImages < 12 && (
         <ShowMoreButton onClick={handleToggleImages}>
           {visibleImages < 11 ? 'Mutass többet' : 'Mutass kevesebbet'}
         </ShowMoreButton>
-      )}
+      )} */}
     </>
   );
 };

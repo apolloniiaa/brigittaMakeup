@@ -28,19 +28,11 @@ const Mennyasszonyi = () => {
             próbasmink nálam készül, az esküvő napján természetesen kiszállást
             is vállalok felárral. Az esküvő napján koszorúslányoknak,
             családtagoknak és a vendégeknek is vállalom a sminkjük elkészítését.
-          </p>
-          <p className='weeding-text'>
-            {' '}
             Különböző csomagok érhetőek el: a mennyasszonyi csomag tartalmazza a
-            próbasminket és az aznapi sminket műszempillával.
-          </p>
-          <p className='weeding-text'>
-            A kombinált csomag tartalmazza a mennyasszonyi csomagot, illetve
-            három fő elkészítését.
-          </p>
-          <p className='weeding-text'>
+            próbasminket és az aznapi sminket műszempillával. A kombinált csomag
+            tartalmazza a mennyasszonyi csomagot, illetve három fő elkészítését.
             A kombinált csomag2 tartalmazza a mennyasszonyi csomagot,illetve öt
-            fő feletti elkészítését, ezen felül megbeszélés tárgya.
+            fő elkészítését, ezen felül megbeszélés tárgya.
           </p>
         </section>
       </div>

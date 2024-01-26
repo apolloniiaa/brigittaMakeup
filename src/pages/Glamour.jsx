@@ -1,10 +1,10 @@
 // Glamour.jsx
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import ShowMoreButton from '../components/ShowMoreBtn';
+// import ShowMoreButton from '../components/ShowMoreBtn';
 
 import GlamourCarousel1 from '../assets/gkmcarousel1.jpg';
 import GlamourCarousel2 from '../assets/gkmcarousel2.jpg';
@@ -18,23 +18,23 @@ import GlamourCarousel9 from '../assets/gkmcarousel9.jpg';
 
 const Glamour = () => {
   const { pathname } = useLocation();
-  const [visibleImages, setVisibleImages] = useState(3);
-  const [showMore, setShowMore] = useState(true);
+  // const [visibleImages, setVisibleImages] = useState(3);
+  // const [showMore, setShowMore] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const handleToggleImages = () => {
-    const increment = window.innerWidth >= 768 ? 3 : 4;
-    const newVisibleImages = visibleImages + increment;
+  // const handleToggleImages = () => {
+  //   const increment = window.innerWidth >= 768 ? 3 : 4;
+  //   const newVisibleImages = visibleImages + increment;
 
-    if (newVisibleImages >= 9) {
-      setVisibleImages(9);
-    } else {
-      setVisibleImages(newVisibleImages);
-    }
-  };
+  //   if (newVisibleImages >= 9) {
+  //     setVisibleImages(9);
+  //   } else {
+  //     setVisibleImages(newVisibleImages);
+  //   }
+  // };
 
   return (
     <>
@@ -65,7 +65,7 @@ const Glamour = () => {
           GlamourCarousel8,
           GlamourCarousel9,
         ]
-          .slice(0, visibleImages)
+          // .slice(0, visibleImages)
           .map((image, index) => (
             <div
               key={index}
@@ -81,11 +81,11 @@ const Glamour = () => {
           ))}
       </div>
 
-      {visibleImages < 9 && (
+      {/* {visibleImages < 9 && (
         <ShowMoreButton onClick={handleToggleImages}>
           {visibleImages < 8 ? 'Mutass többet' : 'Mutass kevesebbet'}
         </ShowMoreButton>
-      )}
+      )} */}
     </>
   );
 };

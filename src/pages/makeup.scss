@@ -6,12 +6,15 @@
   justify-content: center;
   width: 100vw;
   height: 60vh;
+  @include tablet {
+    height: auto;
+  }
 
   .text-container {
     text-align: center;
     padding: 15rem;
     @include tablet {
-      padding: 3rem;
+      padding: 5rem 3rem 5rem 3rem;
     }
     @include mobile {
       padding: 0;
@@ -35,8 +38,10 @@
       &:hover {
         background-color: #e7ba90;
         color: white;
-
-        transform: scale(1.1); /* Növelés 10%-kal */
+        transform: scale(1.1);
+        @include mobile {
+          transform: none;
+        }
       }
     }
 
@@ -116,6 +121,9 @@
     .centered-image {
       width: 500px;
       height: auto;
+      @include tablet {
+        width: 460px;
+      }
       @include mobile {
         display: none;
       }
@@ -141,7 +149,7 @@
 
   @include tablet {
     top: 20%;
-    left: 30%;
+    left: 70%;
     width: 60%;
   }
   @include mobile {

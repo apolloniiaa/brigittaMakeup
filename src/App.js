@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider, Router } from 'react-router-dom';
 import './app.scss';
+// import HomeBtn from './components/HomeBtn'; // Importing HomeBtn
 
 import Beauty from './pages/Beauty';
 import Glamour from './pages/Glamour';
@@ -37,7 +38,12 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      {/* <HomeBtn /> */}
+    </>
+  );
 };
 
 export default App;
