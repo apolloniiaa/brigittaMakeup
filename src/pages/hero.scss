@@ -67,14 +67,15 @@
 
     @include mobile {
       font-size: 1.5rem;
-      line-height: 33px;
+      line-height: 29px;
+      top: 83%;
     }
     .title {
       @include tablet {
         font-size: 4rem;
       }
       @include mobile {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     }
     .subTitle {
