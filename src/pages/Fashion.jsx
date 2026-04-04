@@ -1,8 +1,5 @@
-// FashionCarousel.jsx
-
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import './makeup.scss';
 
 import FashionCarousel1 from '../assets/fashioncarousel1.jpg';
@@ -34,13 +31,13 @@ const FashionCarousel = () => {
             által inspirált munkák, melyek nem minden esetben hétköznapi
             alkotások.
           </p>
-          <Link to='/works'>
-            <p className='work-btn'>
-              Vissza a galériához <Link to='/works'></Link>
-            </p>
+
+          <Link to='/works' className='work-btn'>
+            Vissza a galériához
           </Link>
         </div>
       </div>
+
       <div className='wrapper'>
         {[
           FashionCarousel1,
@@ -64,7 +61,7 @@ const FashionCarousel = () => {
               borderRadius: '5px',
             }}
           >
-            <img src={image} alt='' />
+            <img src={image} alt={`Fashion smink ${index + 1}`} />
           </div>
         ))}
       </div>

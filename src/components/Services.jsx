@@ -16,6 +16,7 @@ const Services = () => {
             <div className='card__icon'>
               <img
                 src={Alkalmi}
+                alt='Alkalmi smink'
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -24,11 +25,13 @@ const Services = () => {
             </div>
           </div>
         </div>
+
         <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
           <div className='card__data'>
             <div className='card__icon'>
               <img
                 src={Fotozas}
+                alt='Fotózás és forgatás smink'
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -37,11 +40,13 @@ const Services = () => {
             </div>
           </div>
         </div>
+
         <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
           <div className='card__data'>
             <div className='card__icon'>
               <img
                 src={Mennyasszonyi}
+                alt='Menyasszonyi smink'
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
@@ -50,11 +55,13 @@ const Services = () => {
             </div>
           </div>
         </div>
+
         <div className='card__bx' style={{ '--clr': ' #f4e2d2' }}>
           <div className='card__data'>
             <div className='card__icon'>
               <img
                 src={Onsminkelo}
+                alt='Önsminkelő oktatás'
                 style={{ width: '200px', height: '90px', objectFit: 'cover' }}
               />
             </div>
