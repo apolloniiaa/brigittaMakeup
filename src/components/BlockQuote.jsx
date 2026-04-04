@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './blockQuote.scss';
-import { motion } from 'framer-motion';
 
 const BlockQuote = () => {
   return (

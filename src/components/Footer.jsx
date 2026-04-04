@@ -1,11 +1,6 @@
 import './footer.scss';
 
-import {
-  FaInstagram,
-  FaFacebook,
-  FaEnvelope,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (

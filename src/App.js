@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Router } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './app.scss';
 // import HomeBtn from './components/HomeBtn'; // Importing HomeBtn
 
