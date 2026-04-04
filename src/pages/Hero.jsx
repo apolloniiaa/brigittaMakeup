@@ -78,7 +78,6 @@ const Hero = () => {
           <div className='subTitle'>Makeup Artist</div>
         </div>
       </motion.div>
-      {/* <Link to='/'></Link> */}
     </motion.div>
   );
 };

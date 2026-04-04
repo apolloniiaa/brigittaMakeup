@@ -1,6 +1,6 @@
 import './makeup.scss';
 import { useLocation } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const Mennyasszonyi = () => {
   const { pathname } = useLocation();
@@ -41,7 +41,7 @@ const Mennyasszonyi = () => {
         <div className='centered-container'>
           <img
             src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-            alt=''
+            alt='Menyasszonyi smink példa'
             className='centered-image'
           />
           <div className='text-box'>

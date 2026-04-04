@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const Fotozas = () => {
@@ -29,7 +29,7 @@ const Fotozas = () => {
         <div className='centered-container'>
           <img
             src='https://i.pinimg.com/564x/e1/4e/26/e14e26ec085a0670044af6030241c248.jpg'
-            alt='Your Image'
+            alt='Fotózási és forgatási smink'
             className='centered-image'
           />
           <div className='text-box'>
