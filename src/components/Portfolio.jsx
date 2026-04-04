@@ -1,4 +1,3 @@
-import React from 'react';
 import './portfolio.scss';
 import { Link } from 'react-router-dom';
 import PortfolioPhoto from '../assets/portfolio2.jpg';
@@ -16,14 +15,12 @@ const Portfolio = () => {
           </p>
         </div>
         <div className='images'>
-          <img src={PortfolioPhotoBack} alt='' />
-          <img src={PortfolioPhoto} ='' />
+          <img src={PortfolioPhotoBack} alt='' aria-hidden='true' />
+          <img src={PortfolioPhoto} alt='' aria-hidden='true' />
         </div>
       </div>
       <Link to='/works'>
-        <p className='work-btn'>
-          Megtekintés <Link to='/works'></Link>
-        </p>
+        <p className='work-btn'>Megtekintés</p>
       </Link>
     </div>
   );
