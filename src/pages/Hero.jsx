@@ -1,7 +1,6 @@
 import './hero.scss';
 import { motion } from 'framer-motion';
 import MaingImg from '../assets/homePage.jpg';
-import { Link } from 'react-router-dom';
 
 const bgVariants = {
   initial: {
@@ -34,12 +33,12 @@ const imageVariants = {
 
 const sliderVariants = {
   initial: {
-    x: '100%', // Indításkor jobbról indul
+    x: '100%',
   },
   animate: {
-    x: 0, // Középre áll meg
+    x: 0,
     transition: {
-      duration: 2, // A megállási idő
+      duration: 2,
     },
   },
 };

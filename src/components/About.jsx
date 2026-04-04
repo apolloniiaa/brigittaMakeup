@@ -8,7 +8,7 @@ const About = () => {
       <div className='content-container'>
         <div className='title'>RÓLAM</div>
         <div className='small-image-container'>
-          <img src={AboutPhoto} alt='Small Image' />
+          <img src={AboutPhoto} alt='' />
 
           <p>
             Szerelem, szenvedély, kitartás, kreativitás, hivatás, remény,
@@ -20,7 +20,7 @@ const About = () => {
         </div>
       </div>
       <div className='image-container'>
-        <img src={AboutPhoto1} alt='Small Image' />
+        <img src={AboutPhoto1} alt='' />
         <p>
           Kislány korom óta rajongok a művészetért. Kezdetben ez a
           rajzversenyeken való részvételben nyilvánult meg nemzetközi szinten.

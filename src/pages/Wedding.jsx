@@ -1,6 +1,6 @@
 // Wedding.jsx
 
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './makeup.scss';
 // import ShowMoreButton from '../components/ShowMoreBtn'; // Importáld a ShowMoreButton komponenst

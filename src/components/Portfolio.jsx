@@ -16,8 +16,8 @@ const Portfolio = () => {
           </p>
         </div>
         <div className='images'>
-          <img src={PortfolioPhotoBack} alt='Main Image' />
-          <img src={PortfolioPhoto} alt='Main Image' />
+          <img src={PortfolioPhotoBack} alt='' />
+          <img src={PortfolioPhoto} ='' />
         </div>
       </div>
       <Link to='/works'>
